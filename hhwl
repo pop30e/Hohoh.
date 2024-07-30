@@ -1020,27 +1020,27 @@ local script = G2L["62"];
 		if Loading == "Solara" then
 			print("Solara Script")
 			send("Hohol.Ware Solara")
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/pop30e/Hohoh./main/hhwsv0.5', true))
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/pop30e/Hohoh./main/hhwsv0.5"))()
 		elseif Loading == "SolaraAB" then
 			print("SolaraAB Script")
 			send("Hohol.Ware SolaraAB")
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/pop30e/Hohoh./main/hhwsabv0.5', true))
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/pop30e/Hohoh./main/hhwsabv0.5"))()
 		elseif Loading == "Celery" then
 			print("Celery Script")
 			send("Hohol.Ware Celery")
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/pop30e/Hohoh./main/hhwcv0.5', true))
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/pop30e/Hohoh./main/hhwcv0.5"))()
 		elseif Loading == "CeleryAB" then
 			print("CeleryAB Script")
 			send("Hohol.Ware CeleryAB")
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/pop30e/Hohoh./main/hhwabv0.5', true))
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/pop30e/Hohoh./main/hhwcabv0.5"))()
 		elseif Loading == "Wave" then
 			print("Wave Script")
 			send("Hohol.Ware Wave")
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/pop30e/Hohoh./main/hhwwv0.5', true))
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/pop30e/Hohoh./main/hhwwv0.5"))()
 		elseif Loading == "WaveAB" then
 			print("WaveAB Script")
 			send("Hohol.Ware WaveAB")
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/pop30e/Hohoh./main/hhwwabv0.5', true))
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/pop30e/Hohoh./main/hhwwabv0.5"))()
 		end
 	
 		wait(2)
