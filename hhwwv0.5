@@ -11682,11 +11682,15 @@ local script = G2L["3fe"];
 	
 				if o:IsA("Tool") and o:FindFirstChild("ACS_Settings") then
 					local module = require(o:FindFirstChild("ACS_Settings"))
-	
+					
 					if module.Type == "Gun" then
 						local accessid = ACS_Event.AcessId:InvokeServer(plr.UserId)
 						local hwid = accessid.."-"..plr.UserId
-	
+
+						print(o.Name)
+      						print(module.Type)
+	    					print(ModTable.DamageMod)
+      
 						ACS_Event.Damage:InvokeServer(
 							o, 
 							plr.Character.Humanoid, 
