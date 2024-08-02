@@ -4,10 +4,10 @@ local G2L = {};
 -- StarterGui.hohol.ware.SolaraAB
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["DisplayOrder"] = 99999;
-G2L["1"]["Enabled"] = true;
+G2L["1"]["Enabled"] = false;
 G2L["1"]["Name"] = [[hohol.ware.SolaraAB]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
-G2L["1"]["ResetOnSpawn"] = false;
+G2L["1"]["ResetOnSpawn"] = true;
 
 -- StarterGui.hohol.ware.SolaraAB.Frame
 G2L["2"] = Instance.new("Frame", G2L["1"]);
@@ -8135,389 +8135,540 @@ G2L["35f"]["Position"] = UDim2.new(0.13235, 0, 0.78517, 0);
 G2L["360"] = Instance.new("UIAspectRatioConstraint", G2L["2"]);
 G2L["360"]["AspectRatio"] = 1.08301;
 
--- StarterGui.hohol.ware.SolaraAB.Nof
-G2L["361"] = Instance.new("Frame", G2L["1"]);
-G2L["361"]["BorderSizePixel"] = 0;
-G2L["361"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["361"]["Size"] = UDim2.new(0.28327, 0, 0.75617, 0);
-G2L["361"]["Position"] = UDim2.new(0.77193, 0, 0.22293, 0);
-G2L["361"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["361"]["Name"] = [[Nof]];
-G2L["361"]["BackgroundTransparency"] = 1;
-
--- StarterGui.hohol.ware.SolaraAB.Nof.UIListLayout
-G2L["362"] = Instance.new("UIListLayout", G2L["361"]);
-G2L["362"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["362"]["Padding"] = UDim.new(0, 8);
-G2L["362"]["VerticalAlignment"] = Enum.VerticalAlignment.Bottom;
-
--- StarterGui.hohol.ware.SolaraAB.Nof.UIAspectRatioConstraint
-G2L["363"] = Instance.new("UIAspectRatioConstraint", G2L["361"]);
-G2L["363"]["AspectRatio"] = 0.65501;
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder
-G2L["364"] = Instance.new("Folder", G2L["1"]);
-G2L["364"]["Name"] = [[NoficationFolder]];
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.1Finder
-G2L["365"] = Instance.new("Frame", G2L["364"]);
-G2L["365"]["Visible"] = false;
-G2L["365"]["BorderSizePixel"] = 0;
-G2L["365"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
-G2L["365"]["Size"] = UDim2.new(0.98281, 0, 0.21062, 0);
-G2L["365"]["Position"] = UDim2.new(0.00859, 0, 0.33072, 0);
-G2L["365"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["365"]["Name"] = [[1Finder]];
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.1Finder.ic
-G2L["366"] = Instance.new("ImageLabel", G2L["365"]);
-G2L["366"]["BorderSizePixel"] = 0;
-G2L["366"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["366"]["Image"] = [[rbxassetid://10723346959]];
-G2L["366"]["Size"] = UDim2.new(0, 65, 0, 65);
-G2L["366"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["366"]["BackgroundTransparency"] = 1;
-G2L["366"]["Name"] = [[ic]];
-G2L["366"]["Position"] = UDim2.new(0.02182, 0, 0.13333, 0);
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.1Finder.ic.UIGradient
-G2L["367"] = Instance.new("UIGradient", G2L["366"]);
-G2L["367"]["Rotation"] = 90;
-G2L["367"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.1Finder.UIGradient
-G2L["368"] = Instance.new("UIGradient", G2L["365"]);
-G2L["368"]["Rotation"] = 90;
-G2L["368"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.1Finder.a
-G2L["369"] = Instance.new("TextLabel", G2L["365"]);
-G2L["369"]["TextWrapped"] = true;
-G2L["369"]["BorderSizePixel"] = 0;
-G2L["369"]["TextScaled"] = true;
-G2L["369"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["369"]["TextSize"] = 14;
-G2L["369"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["369"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["369"]["BackgroundTransparency"] = 1;
-G2L["369"]["Size"] = UDim2.new(0, 200, 0, 26);
-G2L["369"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["369"]["Text"] = [[Finder]];
-G2L["369"]["Name"] = [[a]];
-G2L["369"]["Position"] = UDim2.new(0.25818, 0, 0.06667, 0);
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.1Finder.Dis
-G2L["36a"] = Instance.new("TextLabel", G2L["365"]);
-G2L["36a"]["TextWrapped"] = true;
-G2L["36a"]["BorderSizePixel"] = 0;
-G2L["36a"]["TextScaled"] = true;
-G2L["36a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["36a"]["TextSize"] = 14;
-G2L["36a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["36a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["36a"]["BackgroundTransparency"] = 1;
-G2L["36a"]["Size"] = UDim2.new(0, 200, 0, 45);
-G2L["36a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["36a"]["Text"] = [[HD Admin has been found!]];
-G2L["36a"]["Name"] = [[Dis]];
-G2L["36a"]["Position"] = UDim2.new(0.25818, 0, 0.35556, 0);
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.1Finder.Close
-G2L["36b"] = Instance.new("TextButton", G2L["365"]);
-G2L["36b"]["TextWrapped"] = true;
-G2L["36b"]["BorderSizePixel"] = 0;
-G2L["36b"]["TextSize"] = 14;
-G2L["36b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["36b"]["TextScaled"] = true;
-G2L["36b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["36b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["36b"]["Size"] = UDim2.new(0, 14, 0, 14);
-G2L["36b"]["BackgroundTransparency"] = 1;
-G2L["36b"]["Name"] = [[Close]];
-G2L["36b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["36b"]["Text"] = [[X]];
-G2L["36b"]["Position"] = UDim2.new(0.93455, 0, 0.06667, 0);
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.1Finder.Scal
-G2L["36c"] = Instance.new("Frame", G2L["365"]);
-G2L["36c"]["BorderSizePixel"] = 0;
-G2L["36c"]["BackgroundColor3"] = Color3.fromRGB(112, 112, 112);
-G2L["36c"]["Size"] = UDim2.new(0, 275, 0, 5);
-G2L["36c"]["Position"] = UDim2.new(0, 0, 0.94444, 0);
-G2L["36c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["36c"]["Name"] = [[Scal]];
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.1Finder.Scal.UIGradient
-G2L["36d"] = Instance.new("UIGradient", G2L["36c"]);
-G2L["36d"]["Rotation"] = 90;
-G2L["36d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.1Finder.Scal.Scal
-G2L["36e"] = Instance.new("Frame", G2L["36c"]);
-G2L["36e"]["BorderSizePixel"] = 0;
-G2L["36e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["36e"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["36e"]["Position"] = UDim2.new(0, 0, -0.05555, 0);
-G2L["36e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["36e"]["Name"] = [[Scal]];
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.1Finder.Scal.Scal.UIGradient
-G2L["36f"] = Instance.new("UIGradient", G2L["36e"]);
-G2L["36f"]["Rotation"] = 90;
-G2L["36f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.1Finder.UIAspectRatioConstraint
-G2L["370"] = Instance.new("UIAspectRatioConstraint", G2L["365"]);
-G2L["370"]["AspectRatio"] = 3.05556;
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.2Success
-G2L["371"] = Instance.new("Frame", G2L["364"]);
-G2L["371"]["Visible"] = false;
-G2L["371"]["BorderSizePixel"] = 0;
-G2L["371"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
-G2L["371"]["Size"] = UDim2.new(1.02354, 0, 0.21068, 0);
-G2L["371"]["Position"] = UDim2.new(-0.03134, 0, 0.56002, 0);
-G2L["371"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["371"]["Name"] = [[2Success]];
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.2Success.ic
-G2L["372"] = Instance.new("ImageLabel", G2L["371"]);
-G2L["372"]["BorderSizePixel"] = 0;
-G2L["372"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["372"]["ImageColor3"] = Color3.fromRGB(81, 148, 255);
-G2L["372"]["Image"] = [[rbxassetid://10734951367]];
-G2L["372"]["Size"] = UDim2.new(0, 65, 0, 65);
-G2L["372"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["372"]["BackgroundTransparency"] = 1;
-G2L["372"]["Name"] = [[ic]];
-G2L["372"]["Position"] = UDim2.new(0.02182, 0, 0.13333, 0);
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.2Success.ic.UIGradient
-G2L["373"] = Instance.new("UIGradient", G2L["372"]);
-G2L["373"]["Rotation"] = 90;
-G2L["373"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.2Success.UIGradient
-G2L["374"] = Instance.new("UIGradient", G2L["371"]);
-G2L["374"]["Rotation"] = 90;
-G2L["374"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.2Success.a
-G2L["375"] = Instance.new("TextLabel", G2L["371"]);
-G2L["375"]["TextWrapped"] = true;
-G2L["375"]["BorderSizePixel"] = 0;
-G2L["375"]["TextScaled"] = true;
-G2L["375"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["375"]["TextSize"] = 14;
-G2L["375"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["375"]["TextColor3"] = Color3.fromRGB(81, 148, 255);
-G2L["375"]["BackgroundTransparency"] = 1;
-G2L["375"]["Size"] = UDim2.new(0, 200, 0, 26);
-G2L["375"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["375"]["Text"] = [[Success]];
-G2L["375"]["Name"] = [[a]];
-G2L["375"]["Position"] = UDim2.new(0.25818, 0, 0.06667, 0);
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.2Success.Dis
-G2L["376"] = Instance.new("TextLabel", G2L["371"]);
-G2L["376"]["TextWrapped"] = true;
-G2L["376"]["BorderSizePixel"] = 0;
-G2L["376"]["TextScaled"] = true;
-G2L["376"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["376"]["TextSize"] = 14;
-G2L["376"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["376"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["376"]["BackgroundTransparency"] = 1;
-G2L["376"]["Size"] = UDim2.new(0, 200, 0, 45);
-G2L["376"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["376"]["Text"] = [[ACS Version 1.7.5 has been found!]];
-G2L["376"]["Name"] = [[Dis]];
-G2L["376"]["Position"] = UDim2.new(0.25818, 0, 0.35556, 0);
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.2Success.Close
-G2L["377"] = Instance.new("TextButton", G2L["371"]);
-G2L["377"]["TextWrapped"] = true;
-G2L["377"]["BorderSizePixel"] = 0;
-G2L["377"]["TextSize"] = 14;
-G2L["377"]["TextColor3"] = Color3.fromRGB(81, 148, 255);
-G2L["377"]["TextScaled"] = true;
-G2L["377"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["377"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["377"]["Size"] = UDim2.new(0, 14, 0, 14);
-G2L["377"]["BackgroundTransparency"] = 1;
-G2L["377"]["Name"] = [[Close]];
-G2L["377"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["377"]["Text"] = [[X]];
-G2L["377"]["Position"] = UDim2.new(0.93455, 0, 0.06667, 0);
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.2Success.Scal
-G2L["378"] = Instance.new("Frame", G2L["371"]);
-G2L["378"]["BorderSizePixel"] = 0;
-G2L["378"]["BackgroundColor3"] = Color3.fromRGB(49, 89, 153);
-G2L["378"]["Size"] = UDim2.new(0, 275, 0, 5);
-G2L["378"]["Position"] = UDim2.new(0, 0, 0.94444, 0);
-G2L["378"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["378"]["Name"] = [[Scal]];
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.2Success.Scal.UIGradient
-G2L["379"] = Instance.new("UIGradient", G2L["378"]);
-G2L["379"]["Rotation"] = 90;
-G2L["379"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.2Success.Scal.Scal
-G2L["37a"] = Instance.new("Frame", G2L["378"]);
-G2L["37a"]["BorderSizePixel"] = 0;
-G2L["37a"]["BackgroundColor3"] = Color3.fromRGB(81, 148, 255);
-G2L["37a"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["37a"]["Position"] = UDim2.new(0, 0, -0.05555, 0);
-G2L["37a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["37a"]["Name"] = [[Scal]];
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.2Success.Scal.Scal.UIGradient
-G2L["37b"] = Instance.new("UIGradient", G2L["37a"]);
-G2L["37b"]["Rotation"] = 90;
-G2L["37b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.2Success.UIAspectRatioConstraint
-G2L["37c"] = Instance.new("UIAspectRatioConstraint", G2L["371"]);
-G2L["37c"]["AspectRatio"] = 3.05556;
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.3Error
-G2L["37d"] = Instance.new("Frame", G2L["364"]);
-G2L["37d"]["Visible"] = false;
-G2L["37d"]["BorderSizePixel"] = 0;
-G2L["37d"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
-G2L["37d"]["Size"] = UDim2.new(1.02354, 0, 0.21068, 0);
-G2L["37d"]["Position"] = UDim2.new(-0.03134, 0, 0.78932, 0);
-G2L["37d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["37d"]["Name"] = [[3Error]];
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.3Error.Scal
-G2L["37e"] = Instance.new("Frame", G2L["37d"]);
-G2L["37e"]["BorderSizePixel"] = 0;
-G2L["37e"]["BackgroundColor3"] = Color3.fromRGB(112, 0, 5);
-G2L["37e"]["Size"] = UDim2.new(0, 275, 0, 5);
-G2L["37e"]["Position"] = UDim2.new(0, 0, 0.94444, 0);
-G2L["37e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["37e"]["Name"] = [[Scal]];
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.3Error.Scal.UIGradient
-G2L["37f"] = Instance.new("UIGradient", G2L["37e"]);
-G2L["37f"]["Rotation"] = 90;
-G2L["37f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.3Error.Scal.Scal
-G2L["380"] = Instance.new("Frame", G2L["37e"]);
-G2L["380"]["BorderSizePixel"] = 0;
-G2L["380"]["BackgroundColor3"] = Color3.fromRGB(213, 0, 5);
-G2L["380"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["380"]["Position"] = UDim2.new(0, 0, -0.05555, 0);
-G2L["380"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["380"]["Name"] = [[Scal]];
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.3Error.Scal.Scal.UIGradient
-G2L["381"] = Instance.new("UIGradient", G2L["380"]);
-G2L["381"]["Rotation"] = 90;
-G2L["381"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.3Error.ic
-G2L["382"] = Instance.new("ImageLabel", G2L["37d"]);
-G2L["382"]["BorderSizePixel"] = 0;
-G2L["382"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["382"]["ImageColor3"] = Color3.fromRGB(213, 0, 5);
-G2L["382"]["Image"] = [[rbxassetid://10734951535]];
-G2L["382"]["Size"] = UDim2.new(0, 65, 0, 65);
-G2L["382"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["382"]["BackgroundTransparency"] = 1;
-G2L["382"]["Name"] = [[ic]];
-G2L["382"]["Position"] = UDim2.new(0.02182, 0, 0.13333, 0);
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.3Error.ic.UIGradient
-G2L["383"] = Instance.new("UIGradient", G2L["382"]);
-G2L["383"]["Rotation"] = 90;
-G2L["383"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.3Error.UIGradient
-G2L["384"] = Instance.new("UIGradient", G2L["37d"]);
-G2L["384"]["Rotation"] = 90;
-G2L["384"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.3Error.a
-G2L["385"] = Instance.new("TextLabel", G2L["37d"]);
-G2L["385"]["TextWrapped"] = true;
-G2L["385"]["BorderSizePixel"] = 0;
-G2L["385"]["TextScaled"] = true;
-G2L["385"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["385"]["TextSize"] = 14;
-G2L["385"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["385"]["TextColor3"] = Color3.fromRGB(213, 0, 5);
-G2L["385"]["BackgroundTransparency"] = 1;
-G2L["385"]["Size"] = UDim2.new(0, 200, 0, 26);
-G2L["385"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["385"]["Text"] = [[Error]];
-G2L["385"]["Name"] = [[a]];
-G2L["385"]["Position"] = UDim2.new(0.25818, 0, 0.06667, 0);
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.3Error.Dis
-G2L["386"] = Instance.new("TextLabel", G2L["37d"]);
-G2L["386"]["TextWrapped"] = true;
-G2L["386"]["BorderSizePixel"] = 0;
-G2L["386"]["TextScaled"] = true;
-G2L["386"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["386"]["TextSize"] = 14;
-G2L["386"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["386"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["386"]["BackgroundTransparency"] = 1;
-G2L["386"]["Size"] = UDim2.new(0, 200, 0, 45);
-G2L["386"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["386"]["Text"] = [[ACS Version 1.7.5 hasn't been found!]];
-G2L["386"]["Name"] = [[Dis]];
-G2L["386"]["Position"] = UDim2.new(0.25818, 0, 0.35556, 0);
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.3Error.Close
-G2L["387"] = Instance.new("TextButton", G2L["37d"]);
-G2L["387"]["TextWrapped"] = true;
-G2L["387"]["BorderSizePixel"] = 0;
-G2L["387"]["TextSize"] = 14;
-G2L["387"]["TextColor3"] = Color3.fromRGB(213, 0, 5);
-G2L["387"]["TextScaled"] = true;
-G2L["387"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["387"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["387"]["Size"] = UDim2.new(0, 14, 0, 14);
-G2L["387"]["BackgroundTransparency"] = 1;
-G2L["387"]["Name"] = [[Close]];
-G2L["387"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["387"]["Text"] = [[X]];
-G2L["387"]["Position"] = UDim2.new(0.93455, 0, 0.06667, 0);
-
--- StarterGui.hohol.ware.SolaraAB.NoficationFolder.3Error.UIAspectRatioConstraint
-G2L["388"] = Instance.new("UIAspectRatioConstraint", G2L["37d"]);
-G2L["388"]["AspectRatio"] = 3.05556;
-
 -- StarterGui.hohol.ware.SolaraAB.SoundFolder
-G2L["389"] = Instance.new("Folder", G2L["1"]);
-G2L["389"]["Name"] = [[SoundFolder]];
+G2L["361"] = Instance.new("Folder", G2L["1"]);
+G2L["361"]["Name"] = [[SoundFolder]];
 
 -- StarterGui.hohol.ware.SolaraAB.SoundFolder.Notification
-G2L["38a"] = Instance.new("Sound", G2L["389"]);
-G2L["38a"]["Volume"] = 0.25;
-G2L["38a"]["Name"] = [[Notification]];
-G2L["38a"]["SoundId"] = [[rbxassetid://7383525713]];
+G2L["362"] = Instance.new("Sound", G2L["361"]);
+G2L["362"]["Volume"] = 0.25;
+G2L["362"]["Name"] = [[Notification]];
+G2L["362"]["SoundId"] = [[rbxassetid://7383525713]];
 
 -- StarterGui.hohol.ware.SolaraAB.SoundFolder.UI_Click
-G2L["38b"] = Instance.new("Sound", G2L["389"]);
-G2L["38b"]["Name"] = [[UI_Click]];
-G2L["38b"]["SoundId"] = [[rbxassetid://6895079853]];
+G2L["363"] = Instance.new("Sound", G2L["361"]);
+G2L["363"]["Name"] = [[UI_Click]];
+G2L["363"]["SoundId"] = [[rbxassetid://6895079853]];
 
 -- StarterGui.hohol.ware.SolaraAB.SoundFolder.UI_CLOSE
-G2L["38c"] = Instance.new("Sound", G2L["389"]);
-G2L["38c"]["Name"] = [[UI_CLOSE]];
-G2L["38c"]["SoundId"] = [[rbxassetid://17208372272]];
+G2L["364"] = Instance.new("Sound", G2L["361"]);
+G2L["364"]["Name"] = [[UI_CLOSE]];
+G2L["364"]["SoundId"] = [[rbxassetid://17208372272]];
 
 -- StarterGui.hohol.ware.SolaraAB.SoundFolder.Spawn
-G2L["38d"] = Instance.new("Sound", G2L["389"]);
-G2L["38d"]["Name"] = [[Spawn]];
-G2L["38d"]["SoundId"] = [[rbxassetid://17208361335]];
+G2L["365"] = Instance.new("Sound", G2L["361"]);
+G2L["365"]["Name"] = [[Spawn]];
+G2L["365"]["SoundId"] = [[rbxassetid://17208361335]];
+
+-- StarterGui.hohol.ware.SolaraAB.Folder
+G2L["366"] = Instance.new("Folder", G2L["1"]);
+
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.1
+G2L["367"] = Instance.new("Frame", G2L["366"]);
+G2L["367"]["Visible"] = false;
+G2L["367"]["BorderSizePixel"] = 0;
+G2L["367"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["367"]["Size"] = UDim2.new(0.99667, 0, 0.25954, 0);
+G2L["367"]["Position"] = UDim2.new(0.38, 0, 0.03053, 0);
+G2L["367"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["367"]["Name"] = [[1]];
+G2L["367"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.1.Frame
+G2L["368"] = Instance.new("Frame", G2L["367"]);
+G2L["368"]["BorderSizePixel"] = 0;
+G2L["368"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 19);
+G2L["368"]["Size"] = UDim2.new(1.00334, 0, 1.02941, 0);
+G2L["368"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.1.Frame.UICorner
+G2L["369"] = Instance.new("UICorner", G2L["368"]);
+G2L["369"]["CornerRadius"] = UDim.new(0, 7);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.1.Frame.UIStroke
+G2L["36a"] = Instance.new("UIStroke", G2L["368"]);
+G2L["36a"]["Transparency"] = 0.8;
+G2L["36a"]["Color"] = Color3.fromRGB(35, 35, 45);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.1.Frame.name
+G2L["36b"] = Instance.new("TextLabel", G2L["368"]);
+G2L["36b"]["TextWrapped"] = true;
+G2L["36b"]["BorderSizePixel"] = 0;
+G2L["36b"]["TextScaled"] = true;
+G2L["36b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36b"]["TextSize"] = 14;
+G2L["36b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["36b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36b"]["BackgroundTransparency"] = 1;
+G2L["36b"]["Size"] = UDim2.new(0.66667, 0, 0.42857, 0);
+G2L["36b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["36b"]["Text"] = [[HW]];
+G2L["36b"]["Name"] = [[name]];
+G2L["36b"]["Position"] = UDim2.new(0.16667, 0, 0.01429, 0);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.1.Frame.name.UIStroke
+G2L["36c"] = Instance.new("UIStroke", G2L["36b"]);
+G2L["36c"]["Transparency"] = 0.75;
+G2L["36c"]["Thickness"] = 1.25;
+G2L["36c"]["Color"] = Color3.fromRGB(159, 159, 159);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.1.Frame.name.UIAspectRatioConstraint
+G2L["36d"] = Instance.new("UIAspectRatioConstraint", G2L["36b"]);
+G2L["36d"]["AspectRatio"] = 6.66667;
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.1.Frame.text
+G2L["36e"] = Instance.new("TextLabel", G2L["368"]);
+G2L["36e"]["TextWrapped"] = true;
+G2L["36e"]["BorderSizePixel"] = 0;
+G2L["36e"]["TextScaled"] = true;
+G2L["36e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36e"]["TextSize"] = 14;
+G2L["36e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["36e"]["TextColor3"] = Color3.fromRGB(196, 198, 221);
+G2L["36e"]["BackgroundTransparency"] = 1;
+G2L["36e"]["Size"] = UDim2.new(1, 0, 0.22857, 0);
+G2L["36e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["36e"]["Text"] = [[Hohol.Ware Loader has been succesful loaded]];
+G2L["36e"]["Name"] = [[text]];
+G2L["36e"]["Position"] = UDim2.new(0, 0, 0.44286, 0);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.1.Frame.text.UIAspectRatioConstraint
+G2L["36f"] = Instance.new("UIAspectRatioConstraint", G2L["36e"]);
+G2L["36f"]["AspectRatio"] = 18.75;
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.1.Frame.Scal
+G2L["370"] = Instance.new("Frame", G2L["368"]);
+G2L["370"]["BorderSizePixel"] = 0;
+G2L["370"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 13);
+G2L["370"]["Size"] = UDim2.new(1, 0, 0.04286, 0);
+G2L["370"]["Position"] = UDim2.new(0, 0, 0.94286, 0);
+G2L["370"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["370"]["Name"] = [[Scal]];
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.1.Frame.Scal.Scal
+G2L["371"] = Instance.new("Frame", G2L["370"]);
+G2L["371"]["BorderSizePixel"] = 0;
+G2L["371"]["BackgroundColor3"] = Color3.fromRGB(199, 225, 255);
+G2L["371"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["371"]["Position"] = UDim2.new(0, 0, 0.7975, 0);
+G2L["371"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["371"]["Name"] = [[Scal]];
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.1.Frame.Scal.Scal.UICorner
+G2L["372"] = Instance.new("UICorner", G2L["371"]);
+G2L["372"]["CornerRadius"] = UDim.new(0, 80);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.1.Frame.Scal.Scal.UIStroke
+G2L["373"] = Instance.new("UIStroke", G2L["371"]);
+G2L["373"]["Transparency"] = 0.5;
+G2L["373"]["Color"] = Color3.fromRGB(141, 160, 181);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.1.Frame.Scal.UIAspectRatioConstraint
+G2L["374"] = Instance.new("UIAspectRatioConstraint", G2L["370"]);
+G2L["374"]["AspectRatio"] = 100;
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.1.Frame.Close
+G2L["375"] = Instance.new("TextButton", G2L["368"]);
+G2L["375"]["TextWrapped"] = true;
+G2L["375"]["BorderSizePixel"] = 0;
+G2L["375"]["TextSize"] = 14;
+G2L["375"]["TextColor3"] = Color3.fromRGB(196, 198, 221);
+G2L["375"]["TextScaled"] = true;
+G2L["375"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["375"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["375"]["Size"] = UDim2.new(0.05667, 0, 0.24286, 0);
+G2L["375"]["BackgroundTransparency"] = 1;
+G2L["375"]["Name"] = [[Close]];
+G2L["375"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["375"]["Text"] = [[X]];
+G2L["375"]["Position"] = UDim2.new(0.91333, 0, 0.1, 0);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.1.Frame.Close.UIAspectRatioConstraint
+G2L["376"] = Instance.new("UIAspectRatioConstraint", G2L["375"]);
+
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.1.Frame.ImageLabel
+G2L["377"] = Instance.new("ImageLabel", G2L["368"]);
+G2L["377"]["BorderSizePixel"] = 0;
+G2L["377"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["377"]["Image"] = [[http://www.roblox.com/asset/?id=7414445494]];
+G2L["377"]["Size"] = UDim2.new(0.06667, 0, 0.28571, 0);
+G2L["377"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["377"]["BackgroundTransparency"] = 1;
+G2L["377"]["Position"] = UDim2.new(0.01667, 0, 0.07143, 0);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.1.Frame.ImageLabel.UICorner
+G2L["378"] = Instance.new("UICorner", G2L["377"]);
+
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.1.Frame.ImageLabel.UIGradient
+G2L["379"] = Instance.new("UIGradient", G2L["377"]);
+G2L["379"]["Rotation"] = 90;
+G2L["379"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(127, 127, 127))};
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.1.Frame.ImageLabel.UIAspectRatioConstraint
+G2L["37a"] = Instance.new("UIAspectRatioConstraint", G2L["377"]);
+
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.1.Frame.UIAspectRatioConstraint
+G2L["37b"] = Instance.new("UIAspectRatioConstraint", G2L["368"]);
+G2L["37b"]["AspectRatio"] = 4.28571;
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.1.UIAspectRatioConstraint
+G2L["37c"] = Instance.new("UIAspectRatioConstraint", G2L["367"]);
+G2L["37c"]["AspectRatio"] = 4.39706;
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.2
+G2L["37d"] = Instance.new("Frame", G2L["366"]);
+G2L["37d"]["Visible"] = false;
+G2L["37d"]["BorderSizePixel"] = 0;
+G2L["37d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["37d"]["Size"] = UDim2.new(0.99667, 0, 0.25954, 0);
+G2L["37d"]["Position"] = UDim2.new(0.38, 0, 0.03053, 0);
+G2L["37d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["37d"]["Name"] = [[2]];
+G2L["37d"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.2.Frame
+G2L["37e"] = Instance.new("Frame", G2L["37d"]);
+G2L["37e"]["BorderSizePixel"] = 0;
+G2L["37e"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 19);
+G2L["37e"]["Size"] = UDim2.new(1.00334, 0, 1.02941, 0);
+G2L["37e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.2.Frame.UICorner
+G2L["37f"] = Instance.new("UICorner", G2L["37e"]);
+G2L["37f"]["CornerRadius"] = UDim.new(0, 7);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.2.Frame.UIStroke
+G2L["380"] = Instance.new("UIStroke", G2L["37e"]);
+G2L["380"]["Transparency"] = 0.8;
+G2L["380"]["Color"] = Color3.fromRGB(35, 35, 45);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.2.Frame.name
+G2L["381"] = Instance.new("TextLabel", G2L["37e"]);
+G2L["381"]["TextWrapped"] = true;
+G2L["381"]["BorderSizePixel"] = 0;
+G2L["381"]["TextScaled"] = true;
+G2L["381"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["381"]["TextSize"] = 14;
+G2L["381"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["381"]["TextColor3"] = Color3.fromRGB(192, 47, 49);
+G2L["381"]["BackgroundTransparency"] = 1;
+G2L["381"]["Size"] = UDim2.new(0.66667, 0, 0.42857, 0);
+G2L["381"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["381"]["Text"] = [[Error]];
+G2L["381"]["Name"] = [[name]];
+G2L["381"]["Position"] = UDim2.new(0.16667, 0, 0.01429, 0);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.2.Frame.name.UIStroke
+G2L["382"] = Instance.new("UIStroke", G2L["381"]);
+G2L["382"]["Transparency"] = 0.75;
+G2L["382"]["Thickness"] = 1.25;
+G2L["382"]["Color"] = Color3.fromRGB(117, 29, 30);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.2.Frame.name.UIAspectRatioConstraint
+G2L["383"] = Instance.new("UIAspectRatioConstraint", G2L["381"]);
+G2L["383"]["AspectRatio"] = 6.66667;
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.2.Frame.text
+G2L["384"] = Instance.new("TextLabel", G2L["37e"]);
+G2L["384"]["TextWrapped"] = true;
+G2L["384"]["BorderSizePixel"] = 0;
+G2L["384"]["TextScaled"] = true;
+G2L["384"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["384"]["TextSize"] = 14;
+G2L["384"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["384"]["TextColor3"] = Color3.fromRGB(221, 202, 202);
+G2L["384"]["BackgroundTransparency"] = 1;
+G2L["384"]["Size"] = UDim2.new(1, 0, 0.22857, 0);
+G2L["384"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["384"]["Text"] = [[ACS not been founded :/]];
+G2L["384"]["Name"] = [[text]];
+G2L["384"]["Position"] = UDim2.new(0, 0, 0.44286, 0);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.2.Frame.text.UIAspectRatioConstraint
+G2L["385"] = Instance.new("UIAspectRatioConstraint", G2L["384"]);
+G2L["385"]["AspectRatio"] = 18.75;
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.2.Frame.Scal
+G2L["386"] = Instance.new("Frame", G2L["37e"]);
+G2L["386"]["BorderSizePixel"] = 0;
+G2L["386"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 13);
+G2L["386"]["Size"] = UDim2.new(1, 0, 0.04286, 0);
+G2L["386"]["Position"] = UDim2.new(0, 0, 0.94286, 0);
+G2L["386"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["386"]["Name"] = [[Scal]];
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.2.Frame.Scal.Scal
+G2L["387"] = Instance.new("Frame", G2L["386"]);
+G2L["387"]["BorderSizePixel"] = 0;
+G2L["387"]["BackgroundColor3"] = Color3.fromRGB(255, 176, 177);
+G2L["387"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["387"]["Position"] = UDim2.new(0, 0, 0.7975, 0);
+G2L["387"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["387"]["Name"] = [[Scal]];
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.2.Frame.Scal.Scal.UICorner
+G2L["388"] = Instance.new("UICorner", G2L["387"]);
+G2L["388"]["CornerRadius"] = UDim.new(0, 80);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.2.Frame.Scal.Scal.UIStroke
+G2L["389"] = Instance.new("UIStroke", G2L["387"]);
+G2L["389"]["Transparency"] = 0.5;
+G2L["389"]["Color"] = Color3.fromRGB(141, 160, 181);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.2.Frame.Scal.UIAspectRatioConstraint
+G2L["38a"] = Instance.new("UIAspectRatioConstraint", G2L["386"]);
+G2L["38a"]["AspectRatio"] = 100;
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.2.Frame.Close
+G2L["38b"] = Instance.new("TextButton", G2L["37e"]);
+G2L["38b"]["TextWrapped"] = true;
+G2L["38b"]["BorderSizePixel"] = 0;
+G2L["38b"]["TextSize"] = 14;
+G2L["38b"]["TextColor3"] = Color3.fromRGB(196, 198, 221);
+G2L["38b"]["TextScaled"] = true;
+G2L["38b"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["38b"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["38b"]["Size"] = UDim2.new(0.05667, 0, 0.24286, 0);
+G2L["38b"]["BackgroundTransparency"] = 1;
+G2L["38b"]["Name"] = [[Close]];
+G2L["38b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38b"]["Text"] = [[X]];
+G2L["38b"]["Position"] = UDim2.new(0.91333, 0, 0.1, 0);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.2.Frame.Close.UIAspectRatioConstraint
+G2L["38c"] = Instance.new("UIAspectRatioConstraint", G2L["38b"]);
+
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.2.Frame.ImageLabel
+G2L["38d"] = Instance.new("ImageLabel", G2L["37e"]);
+G2L["38d"]["BorderSizePixel"] = 0;
+G2L["38d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["38d"]["Image"] = [[http://www.roblox.com/asset/?id=7414445494]];
+G2L["38d"]["Size"] = UDim2.new(0.06667, 0, 0.28571, 0);
+G2L["38d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38d"]["BackgroundTransparency"] = 1;
+G2L["38d"]["Position"] = UDim2.new(0.01667, 0, 0.07143, 0);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.2.Frame.ImageLabel.UICorner
+G2L["38e"] = Instance.new("UICorner", G2L["38d"]);
+
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.2.Frame.ImageLabel.UIGradient
+G2L["38f"] = Instance.new("UIGradient", G2L["38d"]);
+G2L["38f"]["Rotation"] = 90;
+G2L["38f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(253, 80, 83)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(98, 28, 30))};
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.2.Frame.ImageLabel.UIAspectRatioConstraint
+G2L["390"] = Instance.new("UIAspectRatioConstraint", G2L["38d"]);
+
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.2.Frame.UIAspectRatioConstraint
+G2L["391"] = Instance.new("UIAspectRatioConstraint", G2L["37e"]);
+G2L["391"]["AspectRatio"] = 4.28571;
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.2.UIAspectRatioConstraint
+G2L["392"] = Instance.new("UIAspectRatioConstraint", G2L["37d"]);
+G2L["392"]["AspectRatio"] = 4.39706;
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.3
+G2L["393"] = Instance.new("Frame", G2L["366"]);
+G2L["393"]["Visible"] = false;
+G2L["393"]["BorderSizePixel"] = 0;
+G2L["393"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["393"]["Size"] = UDim2.new(0.99667, 0, 0.25954, 0);
+G2L["393"]["Position"] = UDim2.new(0.38, 0, 0.03053, 0);
+G2L["393"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["393"]["Name"] = [[3]];
+G2L["393"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.3.Frame
+G2L["394"] = Instance.new("Frame", G2L["393"]);
+G2L["394"]["BorderSizePixel"] = 0;
+G2L["394"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 19);
+G2L["394"]["Size"] = UDim2.new(1.00334, 0, 1.02941, 0);
+G2L["394"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.3.Frame.UICorner
+G2L["395"] = Instance.new("UICorner", G2L["394"]);
+G2L["395"]["CornerRadius"] = UDim.new(0, 7);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.3.Frame.UIStroke
+G2L["396"] = Instance.new("UIStroke", G2L["394"]);
+G2L["396"]["Transparency"] = 0.8;
+G2L["396"]["Color"] = Color3.fromRGB(35, 35, 45);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.3.Frame.name
+G2L["397"] = Instance.new("TextLabel", G2L["394"]);
+G2L["397"]["TextWrapped"] = true;
+G2L["397"]["BorderSizePixel"] = 0;
+G2L["397"]["TextScaled"] = true;
+G2L["397"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["397"]["TextSize"] = 14;
+G2L["397"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["397"]["TextColor3"] = Color3.fromRGB(203, 231, 255);
+G2L["397"]["BackgroundTransparency"] = 1;
+G2L["397"]["Size"] = UDim2.new(0.66667, 0, 0.42857, 0);
+G2L["397"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["397"]["Text"] = [[Notification]];
+G2L["397"]["Name"] = [[name]];
+G2L["397"]["Position"] = UDim2.new(0.16667, 0, 0.01429, 0);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.3.Frame.name.UIStroke
+G2L["398"] = Instance.new("UIStroke", G2L["397"]);
+G2L["398"]["Transparency"] = 0.75;
+G2L["398"]["Thickness"] = 1.25;
+G2L["398"]["Color"] = Color3.fromRGB(117, 29, 30);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.3.Frame.name.UIAspectRatioConstraint
+G2L["399"] = Instance.new("UIAspectRatioConstraint", G2L["397"]);
+G2L["399"]["AspectRatio"] = 6.66667;
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.3.Frame.text
+G2L["39a"] = Instance.new("TextLabel", G2L["394"]);
+G2L["39a"]["TextWrapped"] = true;
+G2L["39a"]["BorderSizePixel"] = 0;
+G2L["39a"]["TextScaled"] = true;
+G2L["39a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["39a"]["TextSize"] = 14;
+G2L["39a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["39a"]["TextColor3"] = Color3.fromRGB(164, 184, 221);
+G2L["39a"]["BackgroundTransparency"] = 1;
+G2L["39a"]["Size"] = UDim2.new(1, 0, 0.22857, 0);
+G2L["39a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["39a"]["Text"] = [[HD Admin has been founded!]];
+G2L["39a"]["Name"] = [[text]];
+G2L["39a"]["Position"] = UDim2.new(0, 0, 0.44286, 0);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.3.Frame.text.UIAspectRatioConstraint
+G2L["39b"] = Instance.new("UIAspectRatioConstraint", G2L["39a"]);
+G2L["39b"]["AspectRatio"] = 18.75;
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.3.Frame.Scal
+G2L["39c"] = Instance.new("Frame", G2L["394"]);
+G2L["39c"]["BorderSizePixel"] = 0;
+G2L["39c"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 13);
+G2L["39c"]["Size"] = UDim2.new(1, 0, 0.04286, 0);
+G2L["39c"]["Position"] = UDim2.new(0, 0, 0.94286, 0);
+G2L["39c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["39c"]["Name"] = [[Scal]];
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.3.Frame.Scal.Scal
+G2L["39d"] = Instance.new("Frame", G2L["39c"]);
+G2L["39d"]["BorderSizePixel"] = 0;
+G2L["39d"]["BackgroundColor3"] = Color3.fromRGB(173, 198, 255);
+G2L["39d"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["39d"]["Position"] = UDim2.new(0, 0, 0.7975, 0);
+G2L["39d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["39d"]["Name"] = [[Scal]];
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.3.Frame.Scal.Scal.UICorner
+G2L["39e"] = Instance.new("UICorner", G2L["39d"]);
+G2L["39e"]["CornerRadius"] = UDim.new(0, 80);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.3.Frame.Scal.Scal.UIStroke
+G2L["39f"] = Instance.new("UIStroke", G2L["39d"]);
+G2L["39f"]["Transparency"] = 0.5;
+G2L["39f"]["Color"] = Color3.fromRGB(141, 160, 181);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.3.Frame.Scal.UIAspectRatioConstraint
+G2L["3a0"] = Instance.new("UIAspectRatioConstraint", G2L["39c"]);
+G2L["3a0"]["AspectRatio"] = 100;
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.3.Frame.Close
+G2L["3a1"] = Instance.new("TextButton", G2L["394"]);
+G2L["3a1"]["TextWrapped"] = true;
+G2L["3a1"]["BorderSizePixel"] = 0;
+G2L["3a1"]["TextSize"] = 14;
+G2L["3a1"]["TextColor3"] = Color3.fromRGB(196, 198, 221);
+G2L["3a1"]["TextScaled"] = true;
+G2L["3a1"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["3a1"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3a1"]["Size"] = UDim2.new(0.05667, 0, 0.24286, 0);
+G2L["3a1"]["BackgroundTransparency"] = 1;
+G2L["3a1"]["Name"] = [[Close]];
+G2L["3a1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a1"]["Text"] = [[X]];
+G2L["3a1"]["Position"] = UDim2.new(0.91333, 0, 0.1, 0);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.3.Frame.Close.UIAspectRatioConstraint
+G2L["3a2"] = Instance.new("UIAspectRatioConstraint", G2L["3a1"]);
+
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.3.Frame.ImageLabel
+G2L["3a3"] = Instance.new("ImageLabel", G2L["394"]);
+G2L["3a3"]["BorderSizePixel"] = 0;
+G2L["3a3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3a3"]["Image"] = [[http://www.roblox.com/asset/?id=7414445494]];
+G2L["3a3"]["Size"] = UDim2.new(0.06667, 0, 0.28571, 0);
+G2L["3a3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a3"]["BackgroundTransparency"] = 1;
+G2L["3a3"]["Position"] = UDim2.new(0.01667, 0, 0.07143, 0);
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.3.Frame.ImageLabel.UICorner
+G2L["3a4"] = Instance.new("UICorner", G2L["3a3"]);
+
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.3.Frame.ImageLabel.UIGradient
+G2L["3a5"] = Instance.new("UIGradient", G2L["3a3"]);
+G2L["3a5"]["Rotation"] = 90;
+G2L["3a5"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(195, 228, 253)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(94, 116, 132))};
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.3.Frame.ImageLabel.UIAspectRatioConstraint
+G2L["3a6"] = Instance.new("UIAspectRatioConstraint", G2L["3a3"]);
+
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.3.Frame.UIAspectRatioConstraint
+G2L["3a7"] = Instance.new("UIAspectRatioConstraint", G2L["394"]);
+G2L["3a7"]["AspectRatio"] = 4.28571;
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.3.UIAspectRatioConstraint
+G2L["3a8"] = Instance.new("UIAspectRatioConstraint", G2L["393"]);
+G2L["3a8"]["AspectRatio"] = 4.39706;
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.Nof
+G2L["3a9"] = Instance.new("Sound", G2L["366"]);
+G2L["3a9"]["Name"] = [[Nof]];
+G2L["3a9"]["SoundId"] = [[rbxassetid://7518627362]];
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.NofError
+G2L["3aa"] = Instance.new("Sound", G2L["366"]);
+G2L["3aa"]["Name"] = [[NofError]];
+G2L["3aa"]["SoundId"] = [[rbxassetid://7518627362]];
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.NofError.PitchShiftSoundEffect
+G2L["3ab"] = Instance.new("PitchShiftSoundEffect", G2L["3aa"]);
+G2L["3ab"]["Octave"] = 0.75;
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.NofError.EqualizerSoundEffect
+G2L["3ac"] = Instance.new("EqualizerSoundEffect", G2L["3aa"]);
+G2L["3ac"]["MidGain"] = -5;
+G2L["3ac"]["LowGain"] = -10;
+G2L["3ac"]["HighGain"] = 1;
+
+-- StarterGui.hohol.ware.SolaraAB.Folder.NofError.DistortionSoundEffect
+G2L["3ad"] = Instance.new("DistortionSoundEffect", G2L["3aa"]);
+G2L["3ad"]["Level"] = 0.5;
+
+-- StarterGui.hohol.ware.SolaraAB.List
+G2L["3ae"] = Instance.new("Frame", G2L["1"]);
+G2L["3ae"]["BorderSizePixel"] = 0;
+G2L["3ae"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3ae"]["Size"] = UDim2.new(0.19603, 0, 0.38081, 0);
+G2L["3ae"]["Position"] = UDim2.new(0.79652, 0, 0.59738, 0);
+G2L["3ae"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3ae"]["Name"] = [[List]];
+G2L["3ae"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.hohol.ware.SolaraAB.List.UIListLayout
+G2L["3af"] = Instance.new("UIListLayout", G2L["3ae"]);
+G2L["3af"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["3af"]["HorizontalFlex"] = Enum.UIFlexAlignment.SpaceAround;
+G2L["3af"]["Padding"] = UDim.new(0, 10);
+G2L["3af"]["VerticalAlignment"] = Enum.VerticalAlignment.Bottom;
 
 -- StarterGui.hohol.ware.SolaraAB.Frame.LocalScript
 local function C_346()
