@@ -1,8 +1,9 @@
 
+-- Instances: 1096 | Scripts: 1 | Modules: 0
 local G2L = {};
 
 -- StarterGui.hohol.ware.Wave
-G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["DisplayOrder"] = 99999;
 G2L["1"]["Name"] = [[hohol.ware.Wave]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
