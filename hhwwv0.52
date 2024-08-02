@@ -10812,10 +10812,10 @@ local script = G2L["3d6"];
 				elseif o.Name == "Arbuz" then
 					o.Position = UDim2.new(0, 0, 0, 0)
 					o.TextColor3 = themes.White.text
-				elseif o.Name == "name" and o.TextColor3 == Color3.fromRGB(191, 46, 48) then
+				elseif o.Name == "name" and o.TextColor3 == Color3.fromRGB(191, 46, 48) then 
 					o.TextColor3 = Color3.fromRGB(131, 31, 33)
 				elseif o.Name == "text" and o.TextColor3 == Color3.fromRGB(220, 201, 201) then
-					o.TextColor3 = Color3.fromRGB(74, 68, 68)
+					o.TextColor3 = Color3.fromRGB(74, 68, 68) 
 				end
 			end
 	
