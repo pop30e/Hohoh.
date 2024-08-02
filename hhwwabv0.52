@@ -10000,389 +10000,540 @@ G2L["428"]["Position"] = UDim2.new(0.13235, 0, 0.78517, 0);
 G2L["429"] = Instance.new("UIAspectRatioConstraint", G2L["2"]);
 G2L["429"]["AspectRatio"] = 1.08301;
 
--- StarterGui.hohol.ware.WaveAB.Nof
-G2L["42a"] = Instance.new("Frame", G2L["1"]);
-G2L["42a"]["BorderSizePixel"] = 0;
-G2L["42a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["42a"]["Size"] = UDim2.new(0.28327, 0, 0.75617, 0);
-G2L["42a"]["Position"] = UDim2.new(0.77193, 0, 0.22293, 0);
-G2L["42a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["42a"]["Name"] = [[Nof]];
-G2L["42a"]["BackgroundTransparency"] = 1;
+-- StarterGui.hohol.ware.WaveAB.SoundFolder
+G2L["42a"] = Instance.new("Folder", G2L["1"]);
+G2L["42a"]["Name"] = [[SoundFolder]];
 
--- StarterGui.hohol.ware.WaveAB.Nof.UIListLayout
-G2L["42b"] = Instance.new("UIListLayout", G2L["42a"]);
-G2L["42b"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["42b"]["Padding"] = UDim.new(0, 8);
-G2L["42b"]["VerticalAlignment"] = Enum.VerticalAlignment.Bottom;
+-- StarterGui.hohol.ware.WaveAB.SoundFolder.Notification
+G2L["42b"] = Instance.new("Sound", G2L["42a"]);
+G2L["42b"]["Volume"] = 0.25;
+G2L["42b"]["Name"] = [[Notification]];
+G2L["42b"]["SoundId"] = [[rbxassetid://7383525713]];
 
--- StarterGui.hohol.ware.WaveAB.Nof.UIAspectRatioConstraint
-G2L["42c"] = Instance.new("UIAspectRatioConstraint", G2L["42a"]);
-G2L["42c"]["AspectRatio"] = 0.65501;
+-- StarterGui.hohol.ware.WaveAB.SoundFolder.UI_Click
+G2L["42c"] = Instance.new("Sound", G2L["42a"]);
+G2L["42c"]["Name"] = [[UI_Click]];
+G2L["42c"]["SoundId"] = [[rbxassetid://6895079853]];
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder
-G2L["42d"] = Instance.new("Folder", G2L["1"]);
-G2L["42d"]["Name"] = [[NoficationFolder]];
+-- StarterGui.hohol.ware.WaveAB.SoundFolder.UI_CLOSE
+G2L["42d"] = Instance.new("Sound", G2L["42a"]);
+G2L["42d"]["Name"] = [[UI_CLOSE]];
+G2L["42d"]["SoundId"] = [[rbxassetid://17208372272]];
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.1Finder
-G2L["42e"] = Instance.new("Frame", G2L["42d"]);
-G2L["42e"]["Visible"] = false;
-G2L["42e"]["BorderSizePixel"] = 0;
-G2L["42e"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
-G2L["42e"]["Size"] = UDim2.new(0.98281, 0, 0.21062, 0);
-G2L["42e"]["Position"] = UDim2.new(0.00859, 0, 0.33072, 0);
-G2L["42e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["42e"]["Name"] = [[1Finder]];
+-- StarterGui.hohol.ware.WaveAB.SoundFolder.Spawn
+G2L["42e"] = Instance.new("Sound", G2L["42a"]);
+G2L["42e"]["Name"] = [[Spawn]];
+G2L["42e"]["SoundId"] = [[rbxassetid://17208361335]];
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.1Finder.ic
-G2L["42f"] = Instance.new("ImageLabel", G2L["42e"]);
+-- StarterGui.hohol.ware.WaveAB.List
+G2L["42f"] = Instance.new("Frame", G2L["1"]);
 G2L["42f"]["BorderSizePixel"] = 0;
 G2L["42f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["42f"]["Image"] = [[rbxassetid://10723346959]];
-G2L["42f"]["Size"] = UDim2.new(0, 65, 0, 65);
+G2L["42f"]["Size"] = UDim2.new(0.19603, 0, 0.38081, 0);
+G2L["42f"]["Position"] = UDim2.new(0.79652, 0, 0.59738, 0);
 G2L["42f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["42f"]["Name"] = [[List]];
 G2L["42f"]["BackgroundTransparency"] = 1;
-G2L["42f"]["Name"] = [[ic]];
-G2L["42f"]["Position"] = UDim2.new(0.02182, 0, 0.13333, 0);
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.1Finder.ic.UIGradient
-G2L["430"] = Instance.new("UIGradient", G2L["42f"]);
-G2L["430"]["Rotation"] = 90;
-G2L["430"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
+-- StarterGui.hohol.ware.WaveAB.List.UIListLayout
+G2L["430"] = Instance.new("UIListLayout", G2L["42f"]);
+G2L["430"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["430"]["HorizontalFlex"] = Enum.UIFlexAlignment.SpaceAround;
+G2L["430"]["Padding"] = UDim.new(0, 10);
+G2L["430"]["VerticalAlignment"] = Enum.VerticalAlignment.Bottom;
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.1Finder.UIGradient
-G2L["431"] = Instance.new("UIGradient", G2L["42e"]);
-G2L["431"]["Rotation"] = 90;
-G2L["431"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
+-- StarterGui.hohol.ware.WaveAB.Folder
+G2L["431"] = Instance.new("Folder", G2L["1"]);
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.1Finder.a
-G2L["432"] = Instance.new("TextLabel", G2L["42e"]);
-G2L["432"]["TextWrapped"] = true;
+
+-- StarterGui.hohol.ware.WaveAB.Folder.1
+G2L["432"] = Instance.new("Frame", G2L["431"]);
+G2L["432"]["Visible"] = false;
 G2L["432"]["BorderSizePixel"] = 0;
-G2L["432"]["TextScaled"] = true;
 G2L["432"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["432"]["TextSize"] = 14;
-G2L["432"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["432"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["432"]["BackgroundTransparency"] = 1;
-G2L["432"]["Size"] = UDim2.new(0, 200, 0, 26);
+G2L["432"]["Size"] = UDim2.new(0.99667, 0, 0.25954, 0);
+G2L["432"]["Position"] = UDim2.new(0.38, 0, 0.03053, 0);
 G2L["432"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["432"]["Text"] = [[Finder]];
-G2L["432"]["Name"] = [[a]];
-G2L["432"]["Position"] = UDim2.new(0.25818, 0, 0.06667, 0);
+G2L["432"]["Name"] = [[1]];
+G2L["432"]["BackgroundTransparency"] = 1;
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.1Finder.Dis
-G2L["433"] = Instance.new("TextLabel", G2L["42e"]);
-G2L["433"]["TextWrapped"] = true;
+-- StarterGui.hohol.ware.WaveAB.Folder.1.Frame
+G2L["433"] = Instance.new("Frame", G2L["432"]);
 G2L["433"]["BorderSizePixel"] = 0;
-G2L["433"]["TextScaled"] = true;
-G2L["433"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["433"]["TextSize"] = 14;
-G2L["433"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["433"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["433"]["BackgroundTransparency"] = 1;
-G2L["433"]["Size"] = UDim2.new(0, 200, 0, 45);
+G2L["433"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 19);
+G2L["433"]["Size"] = UDim2.new(1.00334, 0, 1.02941, 0);
 G2L["433"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["433"]["Text"] = [[HD Admin has been found!]];
-G2L["433"]["Name"] = [[Dis]];
-G2L["433"]["Position"] = UDim2.new(0.25818, 0, 0.35556, 0);
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.1Finder.Close
-G2L["434"] = Instance.new("TextButton", G2L["42e"]);
-G2L["434"]["TextWrapped"] = true;
-G2L["434"]["BorderSizePixel"] = 0;
-G2L["434"]["TextSize"] = 14;
-G2L["434"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["434"]["TextScaled"] = true;
-G2L["434"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["434"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["434"]["Size"] = UDim2.new(0, 14, 0, 14);
-G2L["434"]["BackgroundTransparency"] = 1;
-G2L["434"]["Name"] = [[Close]];
-G2L["434"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["434"]["Text"] = [[X]];
-G2L["434"]["Position"] = UDim2.new(0.93455, 0, 0.06667, 0);
+-- StarterGui.hohol.ware.WaveAB.Folder.1.Frame.UICorner
+G2L["434"] = Instance.new("UICorner", G2L["433"]);
+G2L["434"]["CornerRadius"] = UDim.new(0, 7);
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.1Finder.Scal
-G2L["435"] = Instance.new("Frame", G2L["42e"]);
-G2L["435"]["BorderSizePixel"] = 0;
-G2L["435"]["BackgroundColor3"] = Color3.fromRGB(112, 112, 112);
-G2L["435"]["Size"] = UDim2.new(0, 275, 0, 5);
-G2L["435"]["Position"] = UDim2.new(0, 0, 0.94444, 0);
-G2L["435"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["435"]["Name"] = [[Scal]];
+-- StarterGui.hohol.ware.WaveAB.Folder.1.Frame.UIStroke
+G2L["435"] = Instance.new("UIStroke", G2L["433"]);
+G2L["435"]["Transparency"] = 0.8;
+G2L["435"]["Color"] = Color3.fromRGB(35, 35, 45);
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.1Finder.Scal.UIGradient
-G2L["436"] = Instance.new("UIGradient", G2L["435"]);
-G2L["436"]["Rotation"] = 90;
-G2L["436"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
+-- StarterGui.hohol.ware.WaveAB.Folder.1.Frame.name
+G2L["436"] = Instance.new("TextLabel", G2L["433"]);
+G2L["436"]["TextWrapped"] = true;
+G2L["436"]["BorderSizePixel"] = 0;
+G2L["436"]["TextScaled"] = true;
+G2L["436"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["436"]["TextSize"] = 14;
+G2L["436"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["436"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["436"]["BackgroundTransparency"] = 1;
+G2L["436"]["Size"] = UDim2.new(0.66667, 0, 0.42857, 0);
+G2L["436"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["436"]["Text"] = [[HW]];
+G2L["436"]["Name"] = [[name]];
+G2L["436"]["Position"] = UDim2.new(0.16667, 0, 0.01429, 0);
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.1Finder.Scal.Scal
-G2L["437"] = Instance.new("Frame", G2L["435"]);
-G2L["437"]["BorderSizePixel"] = 0;
-G2L["437"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["437"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["437"]["Position"] = UDim2.new(0, 0, -0.05555, 0);
-G2L["437"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["437"]["Name"] = [[Scal]];
+-- StarterGui.hohol.ware.WaveAB.Folder.1.Frame.name.UIStroke
+G2L["437"] = Instance.new("UIStroke", G2L["436"]);
+G2L["437"]["Transparency"] = 0.75;
+G2L["437"]["Thickness"] = 1.25;
+G2L["437"]["Color"] = Color3.fromRGB(159, 159, 159);
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.1Finder.Scal.Scal.UIGradient
-G2L["438"] = Instance.new("UIGradient", G2L["437"]);
-G2L["438"]["Rotation"] = 90;
-G2L["438"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
+-- StarterGui.hohol.ware.WaveAB.Folder.1.Frame.name.UIAspectRatioConstraint
+G2L["438"] = Instance.new("UIAspectRatioConstraint", G2L["436"]);
+G2L["438"]["AspectRatio"] = 6.66667;
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.1Finder.UIAspectRatioConstraint
-G2L["439"] = Instance.new("UIAspectRatioConstraint", G2L["42e"]);
-G2L["439"]["AspectRatio"] = 3.05556;
+-- StarterGui.hohol.ware.WaveAB.Folder.1.Frame.text
+G2L["439"] = Instance.new("TextLabel", G2L["433"]);
+G2L["439"]["TextWrapped"] = true;
+G2L["439"]["BorderSizePixel"] = 0;
+G2L["439"]["TextScaled"] = true;
+G2L["439"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["439"]["TextSize"] = 14;
+G2L["439"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["439"]["TextColor3"] = Color3.fromRGB(196, 198, 221);
+G2L["439"]["BackgroundTransparency"] = 1;
+G2L["439"]["Size"] = UDim2.new(1, 0, 0.22857, 0);
+G2L["439"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["439"]["Text"] = [[Hohol.Ware Loader has been succesful loaded]];
+G2L["439"]["Name"] = [[text]];
+G2L["439"]["Position"] = UDim2.new(0, 0, 0.44286, 0);
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.2Success
-G2L["43a"] = Instance.new("Frame", G2L["42d"]);
-G2L["43a"]["Visible"] = false;
-G2L["43a"]["BorderSizePixel"] = 0;
-G2L["43a"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
-G2L["43a"]["Size"] = UDim2.new(1.02354, 0, 0.21068, 0);
-G2L["43a"]["Position"] = UDim2.new(-0.03134, 0, 0.56002, 0);
-G2L["43a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["43a"]["Name"] = [[2Success]];
+-- StarterGui.hohol.ware.WaveAB.Folder.1.Frame.text.UIAspectRatioConstraint
+G2L["43a"] = Instance.new("UIAspectRatioConstraint", G2L["439"]);
+G2L["43a"]["AspectRatio"] = 18.75;
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.2Success.ic
-G2L["43b"] = Instance.new("ImageLabel", G2L["43a"]);
+-- StarterGui.hohol.ware.WaveAB.Folder.1.Frame.Scal
+G2L["43b"] = Instance.new("Frame", G2L["433"]);
 G2L["43b"]["BorderSizePixel"] = 0;
-G2L["43b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["43b"]["ImageColor3"] = Color3.fromRGB(81, 148, 255);
-G2L["43b"]["Image"] = [[rbxassetid://10734951367]];
-G2L["43b"]["Size"] = UDim2.new(0, 65, 0, 65);
+G2L["43b"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 13);
+G2L["43b"]["Size"] = UDim2.new(1, 0, 0.04286, 0);
+G2L["43b"]["Position"] = UDim2.new(0, 0, 0.94286, 0);
 G2L["43b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["43b"]["BackgroundTransparency"] = 1;
-G2L["43b"]["Name"] = [[ic]];
-G2L["43b"]["Position"] = UDim2.new(0.02182, 0, 0.13333, 0);
+G2L["43b"]["Name"] = [[Scal]];
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.2Success.ic.UIGradient
-G2L["43c"] = Instance.new("UIGradient", G2L["43b"]);
-G2L["43c"]["Rotation"] = 90;
-G2L["43c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
+-- StarterGui.hohol.ware.WaveAB.Folder.1.Frame.Scal.Scal
+G2L["43c"] = Instance.new("Frame", G2L["43b"]);
+G2L["43c"]["BorderSizePixel"] = 0;
+G2L["43c"]["BackgroundColor3"] = Color3.fromRGB(199, 225, 255);
+G2L["43c"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["43c"]["Position"] = UDim2.new(0, 0, 0.7975, 0);
+G2L["43c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["43c"]["Name"] = [[Scal]];
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.2Success.UIGradient
-G2L["43d"] = Instance.new("UIGradient", G2L["43a"]);
-G2L["43d"]["Rotation"] = 90;
-G2L["43d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
+-- StarterGui.hohol.ware.WaveAB.Folder.1.Frame.Scal.Scal.UICorner
+G2L["43d"] = Instance.new("UICorner", G2L["43c"]);
+G2L["43d"]["CornerRadius"] = UDim.new(0, 80);
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.2Success.a
-G2L["43e"] = Instance.new("TextLabel", G2L["43a"]);
-G2L["43e"]["TextWrapped"] = true;
-G2L["43e"]["BorderSizePixel"] = 0;
-G2L["43e"]["TextScaled"] = true;
-G2L["43e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["43e"]["TextSize"] = 14;
-G2L["43e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["43e"]["TextColor3"] = Color3.fromRGB(81, 148, 255);
-G2L["43e"]["BackgroundTransparency"] = 1;
-G2L["43e"]["Size"] = UDim2.new(0, 200, 0, 26);
-G2L["43e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["43e"]["Text"] = [[Success]];
-G2L["43e"]["Name"] = [[a]];
-G2L["43e"]["Position"] = UDim2.new(0.25818, 0, 0.06667, 0);
+-- StarterGui.hohol.ware.WaveAB.Folder.1.Frame.Scal.Scal.UIStroke
+G2L["43e"] = Instance.new("UIStroke", G2L["43c"]);
+G2L["43e"]["Transparency"] = 0.5;
+G2L["43e"]["Color"] = Color3.fromRGB(141, 160, 181);
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.2Success.Dis
-G2L["43f"] = Instance.new("TextLabel", G2L["43a"]);
-G2L["43f"]["TextWrapped"] = true;
-G2L["43f"]["BorderSizePixel"] = 0;
-G2L["43f"]["TextScaled"] = true;
-G2L["43f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["43f"]["TextSize"] = 14;
-G2L["43f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["43f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["43f"]["BackgroundTransparency"] = 1;
-G2L["43f"]["Size"] = UDim2.new(0, 200, 0, 45);
-G2L["43f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["43f"]["Text"] = [[ACS Version 1.7.5 has been found!]];
-G2L["43f"]["Name"] = [[Dis]];
-G2L["43f"]["Position"] = UDim2.new(0.25818, 0, 0.35556, 0);
+-- StarterGui.hohol.ware.WaveAB.Folder.1.Frame.Scal.UIAspectRatioConstraint
+G2L["43f"] = Instance.new("UIAspectRatioConstraint", G2L["43b"]);
+G2L["43f"]["AspectRatio"] = 100;
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.2Success.Close
-G2L["440"] = Instance.new("TextButton", G2L["43a"]);
+-- StarterGui.hohol.ware.WaveAB.Folder.1.Frame.Close
+G2L["440"] = Instance.new("TextButton", G2L["433"]);
 G2L["440"]["TextWrapped"] = true;
 G2L["440"]["BorderSizePixel"] = 0;
 G2L["440"]["TextSize"] = 14;
-G2L["440"]["TextColor3"] = Color3.fromRGB(81, 148, 255);
+G2L["440"]["TextColor3"] = Color3.fromRGB(196, 198, 221);
 G2L["440"]["TextScaled"] = true;
-G2L["440"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["440"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["440"]["Size"] = UDim2.new(0, 14, 0, 14);
+G2L["440"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["440"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["440"]["Size"] = UDim2.new(0.05667, 0, 0.24286, 0);
 G2L["440"]["BackgroundTransparency"] = 1;
 G2L["440"]["Name"] = [[Close]];
 G2L["440"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["440"]["Text"] = [[X]];
-G2L["440"]["Position"] = UDim2.new(0.93455, 0, 0.06667, 0);
+G2L["440"]["Position"] = UDim2.new(0.91333, 0, 0.1, 0);
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.2Success.Scal
-G2L["441"] = Instance.new("Frame", G2L["43a"]);
-G2L["441"]["BorderSizePixel"] = 0;
-G2L["441"]["BackgroundColor3"] = Color3.fromRGB(49, 89, 153);
-G2L["441"]["Size"] = UDim2.new(0, 275, 0, 5);
-G2L["441"]["Position"] = UDim2.new(0, 0, 0.94444, 0);
-G2L["441"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["441"]["Name"] = [[Scal]];
+-- StarterGui.hohol.ware.WaveAB.Folder.1.Frame.Close.UIAspectRatioConstraint
+G2L["441"] = Instance.new("UIAspectRatioConstraint", G2L["440"]);
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.2Success.Scal.UIGradient
-G2L["442"] = Instance.new("UIGradient", G2L["441"]);
-G2L["442"]["Rotation"] = 90;
-G2L["442"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.2Success.Scal.Scal
-G2L["443"] = Instance.new("Frame", G2L["441"]);
-G2L["443"]["BorderSizePixel"] = 0;
-G2L["443"]["BackgroundColor3"] = Color3.fromRGB(81, 148, 255);
-G2L["443"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["443"]["Position"] = UDim2.new(0, 0, -0.05555, 0);
-G2L["443"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["443"]["Name"] = [[Scal]];
+-- StarterGui.hohol.ware.WaveAB.Folder.1.Frame.ImageLabel
+G2L["442"] = Instance.new("ImageLabel", G2L["433"]);
+G2L["442"]["BorderSizePixel"] = 0;
+G2L["442"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["442"]["Image"] = [[http://www.roblox.com/asset/?id=7414445494]];
+G2L["442"]["Size"] = UDim2.new(0.06667, 0, 0.28571, 0);
+G2L["442"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["442"]["BackgroundTransparency"] = 1;
+G2L["442"]["Position"] = UDim2.new(0.01667, 0, 0.07143, 0);
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.2Success.Scal.Scal.UIGradient
-G2L["444"] = Instance.new("UIGradient", G2L["443"]);
+-- StarterGui.hohol.ware.WaveAB.Folder.1.Frame.ImageLabel.UICorner
+G2L["443"] = Instance.new("UICorner", G2L["442"]);
+
+
+-- StarterGui.hohol.ware.WaveAB.Folder.1.Frame.ImageLabel.UIGradient
+G2L["444"] = Instance.new("UIGradient", G2L["442"]);
 G2L["444"]["Rotation"] = 90;
-G2L["444"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
+G2L["444"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(127, 127, 127))};
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.2Success.UIAspectRatioConstraint
-G2L["445"] = Instance.new("UIAspectRatioConstraint", G2L["43a"]);
-G2L["445"]["AspectRatio"] = 3.05556;
+-- StarterGui.hohol.ware.WaveAB.Folder.1.Frame.ImageLabel.UIAspectRatioConstraint
+G2L["445"] = Instance.new("UIAspectRatioConstraint", G2L["442"]);
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.3Error
-G2L["446"] = Instance.new("Frame", G2L["42d"]);
-G2L["446"]["Visible"] = false;
-G2L["446"]["BorderSizePixel"] = 0;
-G2L["446"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
-G2L["446"]["Size"] = UDim2.new(1.02354, 0, 0.21068, 0);
-G2L["446"]["Position"] = UDim2.new(-0.03134, 0, 0.78932, 0);
-G2L["446"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["446"]["Name"] = [[3Error]];
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.3Error.Scal
-G2L["447"] = Instance.new("Frame", G2L["446"]);
-G2L["447"]["BorderSizePixel"] = 0;
-G2L["447"]["BackgroundColor3"] = Color3.fromRGB(112, 0, 5);
-G2L["447"]["Size"] = UDim2.new(0, 275, 0, 5);
-G2L["447"]["Position"] = UDim2.new(0, 0, 0.94444, 0);
-G2L["447"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["447"]["Name"] = [[Scal]];
+-- StarterGui.hohol.ware.WaveAB.Folder.1.Frame.UIAspectRatioConstraint
+G2L["446"] = Instance.new("UIAspectRatioConstraint", G2L["433"]);
+G2L["446"]["AspectRatio"] = 4.28571;
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.3Error.Scal.UIGradient
-G2L["448"] = Instance.new("UIGradient", G2L["447"]);
-G2L["448"]["Rotation"] = 90;
-G2L["448"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
+-- StarterGui.hohol.ware.WaveAB.Folder.1.UIAspectRatioConstraint
+G2L["447"] = Instance.new("UIAspectRatioConstraint", G2L["432"]);
+G2L["447"]["AspectRatio"] = 4.39706;
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.3Error.Scal.Scal
-G2L["449"] = Instance.new("Frame", G2L["447"]);
+-- StarterGui.hohol.ware.WaveAB.Folder.2
+G2L["448"] = Instance.new("Frame", G2L["431"]);
+G2L["448"]["Visible"] = false;
+G2L["448"]["BorderSizePixel"] = 0;
+G2L["448"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["448"]["Size"] = UDim2.new(0.99667, 0, 0.25954, 0);
+G2L["448"]["Position"] = UDim2.new(0.38, 0, 0.03053, 0);
+G2L["448"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["448"]["Name"] = [[2]];
+G2L["448"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.hohol.ware.WaveAB.Folder.2.Frame
+G2L["449"] = Instance.new("Frame", G2L["448"]);
 G2L["449"]["BorderSizePixel"] = 0;
-G2L["449"]["BackgroundColor3"] = Color3.fromRGB(213, 0, 5);
-G2L["449"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["449"]["Position"] = UDim2.new(0, 0, -0.05555, 0);
+G2L["449"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 19);
+G2L["449"]["Size"] = UDim2.new(1.00334, 0, 1.02941, 0);
 G2L["449"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["449"]["Name"] = [[Scal]];
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.3Error.Scal.Scal.UIGradient
-G2L["44a"] = Instance.new("UIGradient", G2L["449"]);
-G2L["44a"]["Rotation"] = 90;
-G2L["44a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
+-- StarterGui.hohol.ware.WaveAB.Folder.2.Frame.UICorner
+G2L["44a"] = Instance.new("UICorner", G2L["449"]);
+G2L["44a"]["CornerRadius"] = UDim.new(0, 7);
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.3Error.ic
-G2L["44b"] = Instance.new("ImageLabel", G2L["446"]);
-G2L["44b"]["BorderSizePixel"] = 0;
-G2L["44b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["44b"]["ImageColor3"] = Color3.fromRGB(213, 0, 5);
-G2L["44b"]["Image"] = [[rbxassetid://10734951535]];
-G2L["44b"]["Size"] = UDim2.new(0, 65, 0, 65);
-G2L["44b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["44b"]["BackgroundTransparency"] = 1;
-G2L["44b"]["Name"] = [[ic]];
-G2L["44b"]["Position"] = UDim2.new(0.02182, 0, 0.13333, 0);
+-- StarterGui.hohol.ware.WaveAB.Folder.2.Frame.UIStroke
+G2L["44b"] = Instance.new("UIStroke", G2L["449"]);
+G2L["44b"]["Transparency"] = 0.8;
+G2L["44b"]["Color"] = Color3.fromRGB(35, 35, 45);
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.3Error.ic.UIGradient
-G2L["44c"] = Instance.new("UIGradient", G2L["44b"]);
-G2L["44c"]["Rotation"] = 90;
-G2L["44c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
+-- StarterGui.hohol.ware.WaveAB.Folder.2.Frame.name
+G2L["44c"] = Instance.new("TextLabel", G2L["449"]);
+G2L["44c"]["TextWrapped"] = true;
+G2L["44c"]["BorderSizePixel"] = 0;
+G2L["44c"]["TextScaled"] = true;
+G2L["44c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["44c"]["TextSize"] = 14;
+G2L["44c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["44c"]["TextColor3"] = Color3.fromRGB(192, 47, 49);
+G2L["44c"]["BackgroundTransparency"] = 1;
+G2L["44c"]["Size"] = UDim2.new(0.66667, 0, 0.42857, 0);
+G2L["44c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["44c"]["Text"] = [[Error]];
+G2L["44c"]["Name"] = [[name]];
+G2L["44c"]["Position"] = UDim2.new(0.16667, 0, 0.01429, 0);
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.3Error.UIGradient
-G2L["44d"] = Instance.new("UIGradient", G2L["446"]);
-G2L["44d"]["Rotation"] = 90;
-G2L["44d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
+-- StarterGui.hohol.ware.WaveAB.Folder.2.Frame.name.UIStroke
+G2L["44d"] = Instance.new("UIStroke", G2L["44c"]);
+G2L["44d"]["Transparency"] = 0.75;
+G2L["44d"]["Thickness"] = 1.25;
+G2L["44d"]["Color"] = Color3.fromRGB(117, 29, 30);
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.3Error.a
-G2L["44e"] = Instance.new("TextLabel", G2L["446"]);
-G2L["44e"]["TextWrapped"] = true;
-G2L["44e"]["BorderSizePixel"] = 0;
-G2L["44e"]["TextScaled"] = true;
-G2L["44e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["44e"]["TextSize"] = 14;
-G2L["44e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["44e"]["TextColor3"] = Color3.fromRGB(213, 0, 5);
-G2L["44e"]["BackgroundTransparency"] = 1;
-G2L["44e"]["Size"] = UDim2.new(0, 200, 0, 26);
-G2L["44e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["44e"]["Text"] = [[Error]];
-G2L["44e"]["Name"] = [[a]];
-G2L["44e"]["Position"] = UDim2.new(0.25818, 0, 0.06667, 0);
+-- StarterGui.hohol.ware.WaveAB.Folder.2.Frame.name.UIAspectRatioConstraint
+G2L["44e"] = Instance.new("UIAspectRatioConstraint", G2L["44c"]);
+G2L["44e"]["AspectRatio"] = 6.66667;
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.3Error.Dis
-G2L["44f"] = Instance.new("TextLabel", G2L["446"]);
+-- StarterGui.hohol.ware.WaveAB.Folder.2.Frame.text
+G2L["44f"] = Instance.new("TextLabel", G2L["449"]);
 G2L["44f"]["TextWrapped"] = true;
 G2L["44f"]["BorderSizePixel"] = 0;
 G2L["44f"]["TextScaled"] = true;
 G2L["44f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["44f"]["TextSize"] = 14;
 G2L["44f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["44f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["44f"]["TextColor3"] = Color3.fromRGB(221, 202, 202);
 G2L["44f"]["BackgroundTransparency"] = 1;
-G2L["44f"]["Size"] = UDim2.new(0, 200, 0, 45);
+G2L["44f"]["Size"] = UDim2.new(1, 0, 0.22857, 0);
 G2L["44f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["44f"]["Text"] = [[ACS Version 1.7.5 hasn't been found!]];
-G2L["44f"]["Name"] = [[Dis]];
-G2L["44f"]["Position"] = UDim2.new(0.25818, 0, 0.35556, 0);
+G2L["44f"]["Text"] = [[ACS not been founded :/]];
+G2L["44f"]["Name"] = [[text]];
+G2L["44f"]["Position"] = UDim2.new(0, 0, 0.44286, 0);
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.3Error.Close
-G2L["450"] = Instance.new("TextButton", G2L["446"]);
-G2L["450"]["TextWrapped"] = true;
-G2L["450"]["BorderSizePixel"] = 0;
-G2L["450"]["TextSize"] = 14;
-G2L["450"]["TextColor3"] = Color3.fromRGB(213, 0, 5);
-G2L["450"]["TextScaled"] = true;
-G2L["450"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["450"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["450"]["Size"] = UDim2.new(0, 14, 0, 14);
-G2L["450"]["BackgroundTransparency"] = 1;
-G2L["450"]["Name"] = [[Close]];
-G2L["450"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["450"]["Text"] = [[X]];
-G2L["450"]["Position"] = UDim2.new(0.93455, 0, 0.06667, 0);
+-- StarterGui.hohol.ware.WaveAB.Folder.2.Frame.text.UIAspectRatioConstraint
+G2L["450"] = Instance.new("UIAspectRatioConstraint", G2L["44f"]);
+G2L["450"]["AspectRatio"] = 18.75;
 
--- StarterGui.hohol.ware.WaveAB.NoficationFolder.3Error.UIAspectRatioConstraint
-G2L["451"] = Instance.new("UIAspectRatioConstraint", G2L["446"]);
-G2L["451"]["AspectRatio"] = 3.05556;
+-- StarterGui.hohol.ware.WaveAB.Folder.2.Frame.Scal
+G2L["451"] = Instance.new("Frame", G2L["449"]);
+G2L["451"]["BorderSizePixel"] = 0;
+G2L["451"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 13);
+G2L["451"]["Size"] = UDim2.new(1, 0, 0.04286, 0);
+G2L["451"]["Position"] = UDim2.new(0, 0, 0.94286, 0);
+G2L["451"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["451"]["Name"] = [[Scal]];
 
--- StarterGui.hohol.ware.WaveAB.SoundFolder
-G2L["452"] = Instance.new("Folder", G2L["1"]);
-G2L["452"]["Name"] = [[SoundFolder]];
+-- StarterGui.hohol.ware.WaveAB.Folder.2.Frame.Scal.Scal
+G2L["452"] = Instance.new("Frame", G2L["451"]);
+G2L["452"]["BorderSizePixel"] = 0;
+G2L["452"]["BackgroundColor3"] = Color3.fromRGB(255, 176, 177);
+G2L["452"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["452"]["Position"] = UDim2.new(0, 0, 0.7975, 0);
+G2L["452"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["452"]["Name"] = [[Scal]];
 
--- StarterGui.hohol.ware.WaveAB.SoundFolder.Notification
-G2L["453"] = Instance.new("Sound", G2L["452"]);
-G2L["453"]["Volume"] = 0.25;
-G2L["453"]["Name"] = [[Notification]];
-G2L["453"]["SoundId"] = [[rbxassetid://7383525713]];
+-- StarterGui.hohol.ware.WaveAB.Folder.2.Frame.Scal.Scal.UICorner
+G2L["453"] = Instance.new("UICorner", G2L["452"]);
+G2L["453"]["CornerRadius"] = UDim.new(0, 80);
 
--- StarterGui.hohol.ware.WaveAB.SoundFolder.UI_Click
-G2L["454"] = Instance.new("Sound", G2L["452"]);
-G2L["454"]["Name"] = [[UI_Click]];
-G2L["454"]["SoundId"] = [[rbxassetid://6895079853]];
+-- StarterGui.hohol.ware.WaveAB.Folder.2.Frame.Scal.Scal.UIStroke
+G2L["454"] = Instance.new("UIStroke", G2L["452"]);
+G2L["454"]["Transparency"] = 0.5;
+G2L["454"]["Color"] = Color3.fromRGB(141, 160, 181);
 
--- StarterGui.hohol.ware.WaveAB.SoundFolder.UI_CLOSE
-G2L["455"] = Instance.new("Sound", G2L["452"]);
-G2L["455"]["Name"] = [[UI_CLOSE]];
-G2L["455"]["SoundId"] = [[rbxassetid://17208372272]];
+-- StarterGui.hohol.ware.WaveAB.Folder.2.Frame.Scal.UIAspectRatioConstraint
+G2L["455"] = Instance.new("UIAspectRatioConstraint", G2L["451"]);
+G2L["455"]["AspectRatio"] = 100;
 
--- StarterGui.hohol.ware.WaveAB.SoundFolder.Spawn
-G2L["456"] = Instance.new("Sound", G2L["452"]);
-G2L["456"]["Name"] = [[Spawn]];
-G2L["456"]["SoundId"] = [[rbxassetid://17208361335]];
+-- StarterGui.hohol.ware.WaveAB.Folder.2.Frame.Close
+G2L["456"] = Instance.new("TextButton", G2L["449"]);
+G2L["456"]["TextWrapped"] = true;
+G2L["456"]["BorderSizePixel"] = 0;
+G2L["456"]["TextSize"] = 14;
+G2L["456"]["TextColor3"] = Color3.fromRGB(196, 198, 221);
+G2L["456"]["TextScaled"] = true;
+G2L["456"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["456"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["456"]["Size"] = UDim2.new(0.05667, 0, 0.24286, 0);
+G2L["456"]["BackgroundTransparency"] = 1;
+G2L["456"]["Name"] = [[Close]];
+G2L["456"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["456"]["Text"] = [[X]];
+G2L["456"]["Position"] = UDim2.new(0.91333, 0, 0.1, 0);
+
+-- StarterGui.hohol.ware.WaveAB.Folder.2.Frame.Close.UIAspectRatioConstraint
+G2L["457"] = Instance.new("UIAspectRatioConstraint", G2L["456"]);
+
+
+-- StarterGui.hohol.ware.WaveAB.Folder.2.Frame.ImageLabel
+G2L["458"] = Instance.new("ImageLabel", G2L["449"]);
+G2L["458"]["BorderSizePixel"] = 0;
+G2L["458"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["458"]["Image"] = [[http://www.roblox.com/asset/?id=7414445494]];
+G2L["458"]["Size"] = UDim2.new(0.06667, 0, 0.28571, 0);
+G2L["458"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["458"]["BackgroundTransparency"] = 1;
+G2L["458"]["Position"] = UDim2.new(0.01667, 0, 0.07143, 0);
+
+-- StarterGui.hohol.ware.WaveAB.Folder.2.Frame.ImageLabel.UICorner
+G2L["459"] = Instance.new("UICorner", G2L["458"]);
+
+
+-- StarterGui.hohol.ware.WaveAB.Folder.2.Frame.ImageLabel.UIGradient
+G2L["45a"] = Instance.new("UIGradient", G2L["458"]);
+G2L["45a"]["Rotation"] = 90;
+G2L["45a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(253, 80, 83)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(98, 28, 30))};
+
+-- StarterGui.hohol.ware.WaveAB.Folder.2.Frame.ImageLabel.UIAspectRatioConstraint
+G2L["45b"] = Instance.new("UIAspectRatioConstraint", G2L["458"]);
+
+
+-- StarterGui.hohol.ware.WaveAB.Folder.2.Frame.UIAspectRatioConstraint
+G2L["45c"] = Instance.new("UIAspectRatioConstraint", G2L["449"]);
+G2L["45c"]["AspectRatio"] = 4.28571;
+
+-- StarterGui.hohol.ware.WaveAB.Folder.2.UIAspectRatioConstraint
+G2L["45d"] = Instance.new("UIAspectRatioConstraint", G2L["448"]);
+G2L["45d"]["AspectRatio"] = 4.39706;
+
+-- StarterGui.hohol.ware.WaveAB.Folder.3
+G2L["45e"] = Instance.new("Frame", G2L["431"]);
+G2L["45e"]["Visible"] = false;
+G2L["45e"]["BorderSizePixel"] = 0;
+G2L["45e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["45e"]["Size"] = UDim2.new(0.99667, 0, 0.25954, 0);
+G2L["45e"]["Position"] = UDim2.new(0.38, 0, 0.03053, 0);
+G2L["45e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["45e"]["Name"] = [[3]];
+G2L["45e"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.hohol.ware.WaveAB.Folder.3.Frame
+G2L["45f"] = Instance.new("Frame", G2L["45e"]);
+G2L["45f"]["BorderSizePixel"] = 0;
+G2L["45f"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 19);
+G2L["45f"]["Size"] = UDim2.new(1.00334, 0, 1.02941, 0);
+G2L["45f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+-- StarterGui.hohol.ware.WaveAB.Folder.3.Frame.UICorner
+G2L["460"] = Instance.new("UICorner", G2L["45f"]);
+G2L["460"]["CornerRadius"] = UDim.new(0, 7);
+
+-- StarterGui.hohol.ware.WaveAB.Folder.3.Frame.UIStroke
+G2L["461"] = Instance.new("UIStroke", G2L["45f"]);
+G2L["461"]["Transparency"] = 0.8;
+G2L["461"]["Color"] = Color3.fromRGB(35, 35, 45);
+
+-- StarterGui.hohol.ware.WaveAB.Folder.3.Frame.name
+G2L["462"] = Instance.new("TextLabel", G2L["45f"]);
+G2L["462"]["TextWrapped"] = true;
+G2L["462"]["BorderSizePixel"] = 0;
+G2L["462"]["TextScaled"] = true;
+G2L["462"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["462"]["TextSize"] = 14;
+G2L["462"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["462"]["TextColor3"] = Color3.fromRGB(203, 231, 255);
+G2L["462"]["BackgroundTransparency"] = 1;
+G2L["462"]["Size"] = UDim2.new(0.66667, 0, 0.42857, 0);
+G2L["462"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["462"]["Text"] = [[Notification]];
+G2L["462"]["Name"] = [[name]];
+G2L["462"]["Position"] = UDim2.new(0.16667, 0, 0.01429, 0);
+
+-- StarterGui.hohol.ware.WaveAB.Folder.3.Frame.name.UIStroke
+G2L["463"] = Instance.new("UIStroke", G2L["462"]);
+G2L["463"]["Transparency"] = 0.75;
+G2L["463"]["Thickness"] = 1.25;
+G2L["463"]["Color"] = Color3.fromRGB(117, 29, 30);
+
+-- StarterGui.hohol.ware.WaveAB.Folder.3.Frame.name.UIAspectRatioConstraint
+G2L["464"] = Instance.new("UIAspectRatioConstraint", G2L["462"]);
+G2L["464"]["AspectRatio"] = 6.66667;
+
+-- StarterGui.hohol.ware.WaveAB.Folder.3.Frame.text
+G2L["465"] = Instance.new("TextLabel", G2L["45f"]);
+G2L["465"]["TextWrapped"] = true;
+G2L["465"]["BorderSizePixel"] = 0;
+G2L["465"]["TextScaled"] = true;
+G2L["465"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["465"]["TextSize"] = 14;
+G2L["465"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["465"]["TextColor3"] = Color3.fromRGB(164, 184, 221);
+G2L["465"]["BackgroundTransparency"] = 1;
+G2L["465"]["Size"] = UDim2.new(1, 0, 0.22857, 0);
+G2L["465"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["465"]["Text"] = [[HD Admin has been founded!]];
+G2L["465"]["Name"] = [[text]];
+G2L["465"]["Position"] = UDim2.new(0, 0, 0.44286, 0);
+
+-- StarterGui.hohol.ware.WaveAB.Folder.3.Frame.text.UIAspectRatioConstraint
+G2L["466"] = Instance.new("UIAspectRatioConstraint", G2L["465"]);
+G2L["466"]["AspectRatio"] = 18.75;
+
+-- StarterGui.hohol.ware.WaveAB.Folder.3.Frame.Scal
+G2L["467"] = Instance.new("Frame", G2L["45f"]);
+G2L["467"]["BorderSizePixel"] = 0;
+G2L["467"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 13);
+G2L["467"]["Size"] = UDim2.new(1, 0, 0.04286, 0);
+G2L["467"]["Position"] = UDim2.new(0, 0, 0.94286, 0);
+G2L["467"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["467"]["Name"] = [[Scal]];
+
+-- StarterGui.hohol.ware.WaveAB.Folder.3.Frame.Scal.Scal
+G2L["468"] = Instance.new("Frame", G2L["467"]);
+G2L["468"]["BorderSizePixel"] = 0;
+G2L["468"]["BackgroundColor3"] = Color3.fromRGB(173, 198, 255);
+G2L["468"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["468"]["Position"] = UDim2.new(0, 0, 0.7975, 0);
+G2L["468"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["468"]["Name"] = [[Scal]];
+
+-- StarterGui.hohol.ware.WaveAB.Folder.3.Frame.Scal.Scal.UICorner
+G2L["469"] = Instance.new("UICorner", G2L["468"]);
+G2L["469"]["CornerRadius"] = UDim.new(0, 80);
+
+-- StarterGui.hohol.ware.WaveAB.Folder.3.Frame.Scal.Scal.UIStroke
+G2L["46a"] = Instance.new("UIStroke", G2L["468"]);
+G2L["46a"]["Transparency"] = 0.5;
+G2L["46a"]["Color"] = Color3.fromRGB(141, 160, 181);
+
+-- StarterGui.hohol.ware.WaveAB.Folder.3.Frame.Scal.UIAspectRatioConstraint
+G2L["46b"] = Instance.new("UIAspectRatioConstraint", G2L["467"]);
+G2L["46b"]["AspectRatio"] = 100;
+
+-- StarterGui.hohol.ware.WaveAB.Folder.3.Frame.Close
+G2L["46c"] = Instance.new("TextButton", G2L["45f"]);
+G2L["46c"]["TextWrapped"] = true;
+G2L["46c"]["BorderSizePixel"] = 0;
+G2L["46c"]["TextSize"] = 14;
+G2L["46c"]["TextColor3"] = Color3.fromRGB(196, 198, 221);
+G2L["46c"]["TextScaled"] = true;
+G2L["46c"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["46c"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["46c"]["Size"] = UDim2.new(0.05667, 0, 0.24286, 0);
+G2L["46c"]["BackgroundTransparency"] = 1;
+G2L["46c"]["Name"] = [[Close]];
+G2L["46c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["46c"]["Text"] = [[X]];
+G2L["46c"]["Position"] = UDim2.new(0.91333, 0, 0.1, 0);
+
+-- StarterGui.hohol.ware.WaveAB.Folder.3.Frame.Close.UIAspectRatioConstraint
+G2L["46d"] = Instance.new("UIAspectRatioConstraint", G2L["46c"]);
+
+
+-- StarterGui.hohol.ware.WaveAB.Folder.3.Frame.ImageLabel
+G2L["46e"] = Instance.new("ImageLabel", G2L["45f"]);
+G2L["46e"]["BorderSizePixel"] = 0;
+G2L["46e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["46e"]["Image"] = [[http://www.roblox.com/asset/?id=7414445494]];
+G2L["46e"]["Size"] = UDim2.new(0.06667, 0, 0.28571, 0);
+G2L["46e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["46e"]["BackgroundTransparency"] = 1;
+G2L["46e"]["Position"] = UDim2.new(0.01667, 0, 0.07143, 0);
+
+-- StarterGui.hohol.ware.WaveAB.Folder.3.Frame.ImageLabel.UICorner
+G2L["46f"] = Instance.new("UICorner", G2L["46e"]);
+
+
+-- StarterGui.hohol.ware.WaveAB.Folder.3.Frame.ImageLabel.UIGradient
+G2L["470"] = Instance.new("UIGradient", G2L["46e"]);
+G2L["470"]["Rotation"] = 90;
+G2L["470"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(195, 228, 253)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(94, 116, 132))};
+
+-- StarterGui.hohol.ware.WaveAB.Folder.3.Frame.ImageLabel.UIAspectRatioConstraint
+G2L["471"] = Instance.new("UIAspectRatioConstraint", G2L["46e"]);
+
+
+-- StarterGui.hohol.ware.WaveAB.Folder.3.Frame.UIAspectRatioConstraint
+G2L["472"] = Instance.new("UIAspectRatioConstraint", G2L["45f"]);
+G2L["472"]["AspectRatio"] = 4.28571;
+
+-- StarterGui.hohol.ware.WaveAB.Folder.3.UIAspectRatioConstraint
+G2L["473"] = Instance.new("UIAspectRatioConstraint", G2L["45e"]);
+G2L["473"]["AspectRatio"] = 4.39706;
+
+-- StarterGui.hohol.ware.WaveAB.Folder.Nof
+G2L["474"] = Instance.new("Sound", G2L["431"]);
+G2L["474"]["Name"] = [[Nof]];
+G2L["474"]["SoundId"] = [[rbxassetid://7518627362]];
+
+-- StarterGui.hohol.ware.WaveAB.Folder.NofError
+G2L["475"] = Instance.new("Sound", G2L["431"]);
+G2L["475"]["Name"] = [[NofError]];
+G2L["475"]["SoundId"] = [[rbxassetid://7518627362]];
+
+-- StarterGui.hohol.ware.WaveAB.Folder.NofError.PitchShiftSoundEffect
+G2L["476"] = Instance.new("PitchShiftSoundEffect", G2L["475"]);
+G2L["476"]["Octave"] = 0.75;
+
+-- StarterGui.hohol.ware.WaveAB.Folder.NofError.EqualizerSoundEffect
+G2L["477"] = Instance.new("EqualizerSoundEffect", G2L["475"]);
+G2L["477"]["MidGain"] = -5;
+G2L["477"]["LowGain"] = -10;
+G2L["477"]["HighGain"] = 1;
+
+-- StarterGui.hohol.ware.WaveAB.Folder.NofError.DistortionSoundEffect
+G2L["478"] = Instance.new("DistortionSoundEffect", G2L["475"]);
+G2L["478"]["Level"] = 0.5;
 
 -- StarterGui.hohol.ware.WaveAB.Frame.LocalScript
 local function C_40f()
