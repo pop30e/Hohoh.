@@ -8296,389 +8296,540 @@ G2L["371"]["Position"] = UDim2.new(0.13235, 0, 0.78517, 0);
 G2L["372"] = Instance.new("UIAspectRatioConstraint", G2L["2"]);
 G2L["372"]["AspectRatio"] = 1.08301;
 
--- StarterGui.hohol.ware.CeleryAB.Nof
-G2L["373"] = Instance.new("Frame", G2L["1"]);
-G2L["373"]["BorderSizePixel"] = 0;
-G2L["373"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["373"]["Size"] = UDim2.new(0.28327, 0, 0.75617, 0);
-G2L["373"]["Position"] = UDim2.new(0.77193, 0, 0.22293, 0);
-G2L["373"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["373"]["Name"] = [[Nof]];
-G2L["373"]["BackgroundTransparency"] = 1;
+-- StarterGui.hohol.ware.CeleryAB.SoundFolder
+G2L["373"] = Instance.new("Folder", G2L["1"]);
+G2L["373"]["Name"] = [[SoundFolder]];
 
--- StarterGui.hohol.ware.CeleryAB.Nof.UIListLayout
-G2L["374"] = Instance.new("UIListLayout", G2L["373"]);
-G2L["374"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["374"]["Padding"] = UDim.new(0, 8);
-G2L["374"]["VerticalAlignment"] = Enum.VerticalAlignment.Bottom;
+-- StarterGui.hohol.ware.CeleryAB.SoundFolder.Notification
+G2L["374"] = Instance.new("Sound", G2L["373"]);
+G2L["374"]["Volume"] = 0.25;
+G2L["374"]["Name"] = [[Notification]];
+G2L["374"]["SoundId"] = [[rbxassetid://7383525713]];
 
--- StarterGui.hohol.ware.CeleryAB.Nof.UIAspectRatioConstraint
-G2L["375"] = Instance.new("UIAspectRatioConstraint", G2L["373"]);
-G2L["375"]["AspectRatio"] = 0.65501;
+-- StarterGui.hohol.ware.CeleryAB.SoundFolder.UI_Click
+G2L["375"] = Instance.new("Sound", G2L["373"]);
+G2L["375"]["Name"] = [[UI_Click]];
+G2L["375"]["SoundId"] = [[rbxassetid://6895079853]];
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder
-G2L["376"] = Instance.new("Folder", G2L["1"]);
-G2L["376"]["Name"] = [[NoficationFolder]];
+-- StarterGui.hohol.ware.CeleryAB.SoundFolder.UI_CLOSE
+G2L["376"] = Instance.new("Sound", G2L["373"]);
+G2L["376"]["Name"] = [[UI_CLOSE]];
+G2L["376"]["SoundId"] = [[rbxassetid://17208372272]];
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.1Finder
-G2L["377"] = Instance.new("Frame", G2L["376"]);
-G2L["377"]["Visible"] = false;
-G2L["377"]["BorderSizePixel"] = 0;
-G2L["377"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
-G2L["377"]["Size"] = UDim2.new(0.98281, 0, 0.21062, 0);
-G2L["377"]["Position"] = UDim2.new(0.00859, 0, 0.33072, 0);
-G2L["377"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["377"]["Name"] = [[1Finder]];
+-- StarterGui.hohol.ware.CeleryAB.SoundFolder.Spawn
+G2L["377"] = Instance.new("Sound", G2L["373"]);
+G2L["377"]["Name"] = [[Spawn]];
+G2L["377"]["SoundId"] = [[rbxassetid://17208361335]];
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.1Finder.ic
-G2L["378"] = Instance.new("ImageLabel", G2L["377"]);
+-- StarterGui.hohol.ware.CeleryAB.List
+G2L["378"] = Instance.new("Frame", G2L["1"]);
 G2L["378"]["BorderSizePixel"] = 0;
 G2L["378"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["378"]["Image"] = [[rbxassetid://10723346959]];
-G2L["378"]["Size"] = UDim2.new(0, 65, 0, 65);
+G2L["378"]["Size"] = UDim2.new(0.19603, 0, 0.38081, 0);
+G2L["378"]["Position"] = UDim2.new(0.79652, 0, 0.59738, 0);
 G2L["378"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["378"]["Name"] = [[List]];
 G2L["378"]["BackgroundTransparency"] = 1;
-G2L["378"]["Name"] = [[ic]];
-G2L["378"]["Position"] = UDim2.new(0.02182, 0, 0.13333, 0);
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.1Finder.ic.UIGradient
-G2L["379"] = Instance.new("UIGradient", G2L["378"]);
-G2L["379"]["Rotation"] = 90;
-G2L["379"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
+-- StarterGui.hohol.ware.CeleryAB.List.UIListLayout
+G2L["379"] = Instance.new("UIListLayout", G2L["378"]);
+G2L["379"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["379"]["HorizontalFlex"] = Enum.UIFlexAlignment.SpaceAround;
+G2L["379"]["Padding"] = UDim.new(0, 10);
+G2L["379"]["VerticalAlignment"] = Enum.VerticalAlignment.Bottom;
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.1Finder.UIGradient
-G2L["37a"] = Instance.new("UIGradient", G2L["377"]);
-G2L["37a"]["Rotation"] = 90;
-G2L["37a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
+-- StarterGui.hohol.ware.CeleryAB.Folder
+G2L["37a"] = Instance.new("Folder", G2L["1"]);
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.1Finder.a
-G2L["37b"] = Instance.new("TextLabel", G2L["377"]);
-G2L["37b"]["TextWrapped"] = true;
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.1
+G2L["37b"] = Instance.new("Frame", G2L["37a"]);
+G2L["37b"]["Visible"] = false;
 G2L["37b"]["BorderSizePixel"] = 0;
-G2L["37b"]["TextScaled"] = true;
 G2L["37b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["37b"]["TextSize"] = 14;
-G2L["37b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["37b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["37b"]["BackgroundTransparency"] = 1;
-G2L["37b"]["Size"] = UDim2.new(0, 200, 0, 26);
+G2L["37b"]["Size"] = UDim2.new(0.99667, 0, 0.25954, 0);
+G2L["37b"]["Position"] = UDim2.new(0.38, 0, 0.03053, 0);
 G2L["37b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["37b"]["Text"] = [[Finder]];
-G2L["37b"]["Name"] = [[a]];
-G2L["37b"]["Position"] = UDim2.new(0.25818, 0, 0.06667, 0);
+G2L["37b"]["Name"] = [[1]];
+G2L["37b"]["BackgroundTransparency"] = 1;
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.1Finder.Dis
-G2L["37c"] = Instance.new("TextLabel", G2L["377"]);
-G2L["37c"]["TextWrapped"] = true;
+-- StarterGui.hohol.ware.CeleryAB.Folder.1.Frame
+G2L["37c"] = Instance.new("Frame", G2L["37b"]);
 G2L["37c"]["BorderSizePixel"] = 0;
-G2L["37c"]["TextScaled"] = true;
-G2L["37c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["37c"]["TextSize"] = 14;
-G2L["37c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["37c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["37c"]["BackgroundTransparency"] = 1;
-G2L["37c"]["Size"] = UDim2.new(0, 200, 0, 45);
+G2L["37c"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 19);
+G2L["37c"]["Size"] = UDim2.new(1.00334, 0, 1.02941, 0);
 G2L["37c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["37c"]["Text"] = [[HD Admin has been found!]];
-G2L["37c"]["Name"] = [[Dis]];
-G2L["37c"]["Position"] = UDim2.new(0.25818, 0, 0.35556, 0);
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.1Finder.Close
-G2L["37d"] = Instance.new("TextButton", G2L["377"]);
-G2L["37d"]["TextWrapped"] = true;
-G2L["37d"]["BorderSizePixel"] = 0;
-G2L["37d"]["TextSize"] = 14;
-G2L["37d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["37d"]["TextScaled"] = true;
-G2L["37d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["37d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["37d"]["Size"] = UDim2.new(0, 14, 0, 14);
-G2L["37d"]["BackgroundTransparency"] = 1;
-G2L["37d"]["Name"] = [[Close]];
-G2L["37d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["37d"]["Text"] = [[X]];
-G2L["37d"]["Position"] = UDim2.new(0.93455, 0, 0.06667, 0);
+-- StarterGui.hohol.ware.CeleryAB.Folder.1.Frame.UICorner
+G2L["37d"] = Instance.new("UICorner", G2L["37c"]);
+G2L["37d"]["CornerRadius"] = UDim.new(0, 7);
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.1Finder.Scal
-G2L["37e"] = Instance.new("Frame", G2L["377"]);
-G2L["37e"]["BorderSizePixel"] = 0;
-G2L["37e"]["BackgroundColor3"] = Color3.fromRGB(112, 112, 112);
-G2L["37e"]["Size"] = UDim2.new(0, 275, 0, 5);
-G2L["37e"]["Position"] = UDim2.new(0, 0, 0.94444, 0);
-G2L["37e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["37e"]["Name"] = [[Scal]];
+-- StarterGui.hohol.ware.CeleryAB.Folder.1.Frame.UIStroke
+G2L["37e"] = Instance.new("UIStroke", G2L["37c"]);
+G2L["37e"]["Transparency"] = 0.8;
+G2L["37e"]["Color"] = Color3.fromRGB(35, 35, 45);
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.1Finder.Scal.UIGradient
-G2L["37f"] = Instance.new("UIGradient", G2L["37e"]);
-G2L["37f"]["Rotation"] = 90;
-G2L["37f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
+-- StarterGui.hohol.ware.CeleryAB.Folder.1.Frame.name
+G2L["37f"] = Instance.new("TextLabel", G2L["37c"]);
+G2L["37f"]["TextWrapped"] = true;
+G2L["37f"]["BorderSizePixel"] = 0;
+G2L["37f"]["TextScaled"] = true;
+G2L["37f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["37f"]["TextSize"] = 14;
+G2L["37f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["37f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["37f"]["BackgroundTransparency"] = 1;
+G2L["37f"]["Size"] = UDim2.new(0.66667, 0, 0.42857, 0);
+G2L["37f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["37f"]["Text"] = [[HW]];
+G2L["37f"]["Name"] = [[name]];
+G2L["37f"]["Position"] = UDim2.new(0.16667, 0, 0.01429, 0);
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.1Finder.Scal.Scal
-G2L["380"] = Instance.new("Frame", G2L["37e"]);
-G2L["380"]["BorderSizePixel"] = 0;
-G2L["380"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["380"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["380"]["Position"] = UDim2.new(0, 0, -0.05555, 0);
-G2L["380"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["380"]["Name"] = [[Scal]];
+-- StarterGui.hohol.ware.CeleryAB.Folder.1.Frame.name.UIStroke
+G2L["380"] = Instance.new("UIStroke", G2L["37f"]);
+G2L["380"]["Transparency"] = 0.75;
+G2L["380"]["Thickness"] = 1.25;
+G2L["380"]["Color"] = Color3.fromRGB(159, 159, 159);
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.1Finder.Scal.Scal.UIGradient
-G2L["381"] = Instance.new("UIGradient", G2L["380"]);
-G2L["381"]["Rotation"] = 90;
-G2L["381"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
+-- StarterGui.hohol.ware.CeleryAB.Folder.1.Frame.name.UIAspectRatioConstraint
+G2L["381"] = Instance.new("UIAspectRatioConstraint", G2L["37f"]);
+G2L["381"]["AspectRatio"] = 6.66667;
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.1Finder.UIAspectRatioConstraint
-G2L["382"] = Instance.new("UIAspectRatioConstraint", G2L["377"]);
-G2L["382"]["AspectRatio"] = 3.05556;
+-- StarterGui.hohol.ware.CeleryAB.Folder.1.Frame.text
+G2L["382"] = Instance.new("TextLabel", G2L["37c"]);
+G2L["382"]["TextWrapped"] = true;
+G2L["382"]["BorderSizePixel"] = 0;
+G2L["382"]["TextScaled"] = true;
+G2L["382"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["382"]["TextSize"] = 14;
+G2L["382"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["382"]["TextColor3"] = Color3.fromRGB(196, 198, 221);
+G2L["382"]["BackgroundTransparency"] = 1;
+G2L["382"]["Size"] = UDim2.new(1, 0, 0.22857, 0);
+G2L["382"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["382"]["Text"] = [[Hohol.Ware Loader has been succesful loaded]];
+G2L["382"]["Name"] = [[text]];
+G2L["382"]["Position"] = UDim2.new(0, 0, 0.44286, 0);
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.2Success
-G2L["383"] = Instance.new("Frame", G2L["376"]);
-G2L["383"]["Visible"] = false;
-G2L["383"]["BorderSizePixel"] = 0;
-G2L["383"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
-G2L["383"]["Size"] = UDim2.new(1.02354, 0, 0.21068, 0);
-G2L["383"]["Position"] = UDim2.new(-0.03134, 0, 0.56002, 0);
-G2L["383"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["383"]["Name"] = [[2Success]];
+-- StarterGui.hohol.ware.CeleryAB.Folder.1.Frame.text.UIAspectRatioConstraint
+G2L["383"] = Instance.new("UIAspectRatioConstraint", G2L["382"]);
+G2L["383"]["AspectRatio"] = 18.75;
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.2Success.ic
-G2L["384"] = Instance.new("ImageLabel", G2L["383"]);
+-- StarterGui.hohol.ware.CeleryAB.Folder.1.Frame.Scal
+G2L["384"] = Instance.new("Frame", G2L["37c"]);
 G2L["384"]["BorderSizePixel"] = 0;
-G2L["384"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["384"]["ImageColor3"] = Color3.fromRGB(81, 148, 255);
-G2L["384"]["Image"] = [[rbxassetid://10734951367]];
-G2L["384"]["Size"] = UDim2.new(0, 65, 0, 65);
+G2L["384"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 13);
+G2L["384"]["Size"] = UDim2.new(1, 0, 0.04286, 0);
+G2L["384"]["Position"] = UDim2.new(0, 0, 0.94286, 0);
 G2L["384"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["384"]["BackgroundTransparency"] = 1;
-G2L["384"]["Name"] = [[ic]];
-G2L["384"]["Position"] = UDim2.new(0.02182, 0, 0.13333, 0);
+G2L["384"]["Name"] = [[Scal]];
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.2Success.ic.UIGradient
-G2L["385"] = Instance.new("UIGradient", G2L["384"]);
-G2L["385"]["Rotation"] = 90;
-G2L["385"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
+-- StarterGui.hohol.ware.CeleryAB.Folder.1.Frame.Scal.Scal
+G2L["385"] = Instance.new("Frame", G2L["384"]);
+G2L["385"]["BorderSizePixel"] = 0;
+G2L["385"]["BackgroundColor3"] = Color3.fromRGB(199, 225, 255);
+G2L["385"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["385"]["Position"] = UDim2.new(0, 0, 0.7975, 0);
+G2L["385"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["385"]["Name"] = [[Scal]];
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.2Success.UIGradient
-G2L["386"] = Instance.new("UIGradient", G2L["383"]);
-G2L["386"]["Rotation"] = 90;
-G2L["386"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
+-- StarterGui.hohol.ware.CeleryAB.Folder.1.Frame.Scal.Scal.UICorner
+G2L["386"] = Instance.new("UICorner", G2L["385"]);
+G2L["386"]["CornerRadius"] = UDim.new(0, 80);
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.2Success.a
-G2L["387"] = Instance.new("TextLabel", G2L["383"]);
-G2L["387"]["TextWrapped"] = true;
-G2L["387"]["BorderSizePixel"] = 0;
-G2L["387"]["TextScaled"] = true;
-G2L["387"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["387"]["TextSize"] = 14;
-G2L["387"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["387"]["TextColor3"] = Color3.fromRGB(81, 148, 255);
-G2L["387"]["BackgroundTransparency"] = 1;
-G2L["387"]["Size"] = UDim2.new(0, 200, 0, 26);
-G2L["387"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["387"]["Text"] = [[Success]];
-G2L["387"]["Name"] = [[a]];
-G2L["387"]["Position"] = UDim2.new(0.25818, 0, 0.06667, 0);
+-- StarterGui.hohol.ware.CeleryAB.Folder.1.Frame.Scal.Scal.UIStroke
+G2L["387"] = Instance.new("UIStroke", G2L["385"]);
+G2L["387"]["Transparency"] = 0.5;
+G2L["387"]["Color"] = Color3.fromRGB(141, 160, 181);
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.2Success.Dis
-G2L["388"] = Instance.new("TextLabel", G2L["383"]);
-G2L["388"]["TextWrapped"] = true;
-G2L["388"]["BorderSizePixel"] = 0;
-G2L["388"]["TextScaled"] = true;
-G2L["388"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["388"]["TextSize"] = 14;
-G2L["388"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["388"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["388"]["BackgroundTransparency"] = 1;
-G2L["388"]["Size"] = UDim2.new(0, 200, 0, 45);
-G2L["388"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["388"]["Text"] = [[ACS Version 1.7.5 has been found!]];
-G2L["388"]["Name"] = [[Dis]];
-G2L["388"]["Position"] = UDim2.new(0.25818, 0, 0.35556, 0);
+-- StarterGui.hohol.ware.CeleryAB.Folder.1.Frame.Scal.UIAspectRatioConstraint
+G2L["388"] = Instance.new("UIAspectRatioConstraint", G2L["384"]);
+G2L["388"]["AspectRatio"] = 100;
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.2Success.Close
-G2L["389"] = Instance.new("TextButton", G2L["383"]);
+-- StarterGui.hohol.ware.CeleryAB.Folder.1.Frame.Close
+G2L["389"] = Instance.new("TextButton", G2L["37c"]);
 G2L["389"]["TextWrapped"] = true;
 G2L["389"]["BorderSizePixel"] = 0;
 G2L["389"]["TextSize"] = 14;
-G2L["389"]["TextColor3"] = Color3.fromRGB(81, 148, 255);
+G2L["389"]["TextColor3"] = Color3.fromRGB(196, 198, 221);
 G2L["389"]["TextScaled"] = true;
-G2L["389"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["389"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["389"]["Size"] = UDim2.new(0, 14, 0, 14);
+G2L["389"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["389"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["389"]["Size"] = UDim2.new(0.05667, 0, 0.24286, 0);
 G2L["389"]["BackgroundTransparency"] = 1;
 G2L["389"]["Name"] = [[Close]];
 G2L["389"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["389"]["Text"] = [[X]];
-G2L["389"]["Position"] = UDim2.new(0.93455, 0, 0.06667, 0);
+G2L["389"]["Position"] = UDim2.new(0.91333, 0, 0.1, 0);
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.2Success.Scal
-G2L["38a"] = Instance.new("Frame", G2L["383"]);
-G2L["38a"]["BorderSizePixel"] = 0;
-G2L["38a"]["BackgroundColor3"] = Color3.fromRGB(49, 89, 153);
-G2L["38a"]["Size"] = UDim2.new(0, 275, 0, 5);
-G2L["38a"]["Position"] = UDim2.new(0, 0, 0.94444, 0);
-G2L["38a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["38a"]["Name"] = [[Scal]];
+-- StarterGui.hohol.ware.CeleryAB.Folder.1.Frame.Close.UIAspectRatioConstraint
+G2L["38a"] = Instance.new("UIAspectRatioConstraint", G2L["389"]);
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.2Success.Scal.UIGradient
-G2L["38b"] = Instance.new("UIGradient", G2L["38a"]);
-G2L["38b"]["Rotation"] = 90;
-G2L["38b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.2Success.Scal.Scal
-G2L["38c"] = Instance.new("Frame", G2L["38a"]);
-G2L["38c"]["BorderSizePixel"] = 0;
-G2L["38c"]["BackgroundColor3"] = Color3.fromRGB(81, 148, 255);
-G2L["38c"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["38c"]["Position"] = UDim2.new(0, 0, -0.05555, 0);
-G2L["38c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["38c"]["Name"] = [[Scal]];
+-- StarterGui.hohol.ware.CeleryAB.Folder.1.Frame.ImageLabel
+G2L["38b"] = Instance.new("ImageLabel", G2L["37c"]);
+G2L["38b"]["BorderSizePixel"] = 0;
+G2L["38b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["38b"]["Image"] = [[http://www.roblox.com/asset/?id=7414445494]];
+G2L["38b"]["Size"] = UDim2.new(0.06667, 0, 0.28571, 0);
+G2L["38b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38b"]["BackgroundTransparency"] = 1;
+G2L["38b"]["Position"] = UDim2.new(0.01667, 0, 0.07143, 0);
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.2Success.Scal.Scal.UIGradient
-G2L["38d"] = Instance.new("UIGradient", G2L["38c"]);
+-- StarterGui.hohol.ware.CeleryAB.Folder.1.Frame.ImageLabel.UICorner
+G2L["38c"] = Instance.new("UICorner", G2L["38b"]);
+
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.1.Frame.ImageLabel.UIGradient
+G2L["38d"] = Instance.new("UIGradient", G2L["38b"]);
 G2L["38d"]["Rotation"] = 90;
-G2L["38d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
+G2L["38d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(127, 127, 127))};
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.2Success.UIAspectRatioConstraint
-G2L["38e"] = Instance.new("UIAspectRatioConstraint", G2L["383"]);
-G2L["38e"]["AspectRatio"] = 3.05556;
+-- StarterGui.hohol.ware.CeleryAB.Folder.1.Frame.ImageLabel.UIAspectRatioConstraint
+G2L["38e"] = Instance.new("UIAspectRatioConstraint", G2L["38b"]);
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.3Error
-G2L["38f"] = Instance.new("Frame", G2L["376"]);
-G2L["38f"]["Visible"] = false;
-G2L["38f"]["BorderSizePixel"] = 0;
-G2L["38f"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
-G2L["38f"]["Size"] = UDim2.new(1.02354, 0, 0.21068, 0);
-G2L["38f"]["Position"] = UDim2.new(-0.03134, 0, 0.78932, 0);
-G2L["38f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["38f"]["Name"] = [[3Error]];
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.3Error.Scal
-G2L["390"] = Instance.new("Frame", G2L["38f"]);
-G2L["390"]["BorderSizePixel"] = 0;
-G2L["390"]["BackgroundColor3"] = Color3.fromRGB(112, 0, 5);
-G2L["390"]["Size"] = UDim2.new(0, 275, 0, 5);
-G2L["390"]["Position"] = UDim2.new(0, 0, 0.94444, 0);
-G2L["390"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["390"]["Name"] = [[Scal]];
+-- StarterGui.hohol.ware.CeleryAB.Folder.1.Frame.UIAspectRatioConstraint
+G2L["38f"] = Instance.new("UIAspectRatioConstraint", G2L["37c"]);
+G2L["38f"]["AspectRatio"] = 4.28571;
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.3Error.Scal.UIGradient
-G2L["391"] = Instance.new("UIGradient", G2L["390"]);
-G2L["391"]["Rotation"] = 90;
-G2L["391"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
+-- StarterGui.hohol.ware.CeleryAB.Folder.1.UIAspectRatioConstraint
+G2L["390"] = Instance.new("UIAspectRatioConstraint", G2L["37b"]);
+G2L["390"]["AspectRatio"] = 4.39706;
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.3Error.Scal.Scal
-G2L["392"] = Instance.new("Frame", G2L["390"]);
+-- StarterGui.hohol.ware.CeleryAB.Folder.2
+G2L["391"] = Instance.new("Frame", G2L["37a"]);
+G2L["391"]["Visible"] = false;
+G2L["391"]["BorderSizePixel"] = 0;
+G2L["391"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["391"]["Size"] = UDim2.new(0.99667, 0, 0.25954, 0);
+G2L["391"]["Position"] = UDim2.new(0.38, 0, 0.03053, 0);
+G2L["391"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["391"]["Name"] = [[2]];
+G2L["391"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.2.Frame
+G2L["392"] = Instance.new("Frame", G2L["391"]);
 G2L["392"]["BorderSizePixel"] = 0;
-G2L["392"]["BackgroundColor3"] = Color3.fromRGB(213, 0, 5);
-G2L["392"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["392"]["Position"] = UDim2.new(0, 0, -0.05555, 0);
+G2L["392"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 19);
+G2L["392"]["Size"] = UDim2.new(1.00334, 0, 1.02941, 0);
 G2L["392"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["392"]["Name"] = [[Scal]];
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.3Error.Scal.Scal.UIGradient
-G2L["393"] = Instance.new("UIGradient", G2L["392"]);
-G2L["393"]["Rotation"] = 90;
-G2L["393"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
+-- StarterGui.hohol.ware.CeleryAB.Folder.2.Frame.UICorner
+G2L["393"] = Instance.new("UICorner", G2L["392"]);
+G2L["393"]["CornerRadius"] = UDim.new(0, 7);
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.3Error.ic
-G2L["394"] = Instance.new("ImageLabel", G2L["38f"]);
-G2L["394"]["BorderSizePixel"] = 0;
-G2L["394"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["394"]["ImageColor3"] = Color3.fromRGB(213, 0, 5);
-G2L["394"]["Image"] = [[rbxassetid://10734951535]];
-G2L["394"]["Size"] = UDim2.new(0, 65, 0, 65);
-G2L["394"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["394"]["BackgroundTransparency"] = 1;
-G2L["394"]["Name"] = [[ic]];
-G2L["394"]["Position"] = UDim2.new(0.02182, 0, 0.13333, 0);
+-- StarterGui.hohol.ware.CeleryAB.Folder.2.Frame.UIStroke
+G2L["394"] = Instance.new("UIStroke", G2L["392"]);
+G2L["394"]["Transparency"] = 0.8;
+G2L["394"]["Color"] = Color3.fromRGB(35, 35, 45);
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.3Error.ic.UIGradient
-G2L["395"] = Instance.new("UIGradient", G2L["394"]);
-G2L["395"]["Rotation"] = 90;
-G2L["395"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
+-- StarterGui.hohol.ware.CeleryAB.Folder.2.Frame.name
+G2L["395"] = Instance.new("TextLabel", G2L["392"]);
+G2L["395"]["TextWrapped"] = true;
+G2L["395"]["BorderSizePixel"] = 0;
+G2L["395"]["TextScaled"] = true;
+G2L["395"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["395"]["TextSize"] = 14;
+G2L["395"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["395"]["TextColor3"] = Color3.fromRGB(192, 47, 49);
+G2L["395"]["BackgroundTransparency"] = 1;
+G2L["395"]["Size"] = UDim2.new(0.66667, 0, 0.42857, 0);
+G2L["395"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["395"]["Text"] = [[Error]];
+G2L["395"]["Name"] = [[name]];
+G2L["395"]["Position"] = UDim2.new(0.16667, 0, 0.01429, 0);
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.3Error.UIGradient
-G2L["396"] = Instance.new("UIGradient", G2L["38f"]);
-G2L["396"]["Rotation"] = 90;
-G2L["396"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(203, 203, 203))};
+-- StarterGui.hohol.ware.CeleryAB.Folder.2.Frame.name.UIStroke
+G2L["396"] = Instance.new("UIStroke", G2L["395"]);
+G2L["396"]["Transparency"] = 0.75;
+G2L["396"]["Thickness"] = 1.25;
+G2L["396"]["Color"] = Color3.fromRGB(117, 29, 30);
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.3Error.a
-G2L["397"] = Instance.new("TextLabel", G2L["38f"]);
-G2L["397"]["TextWrapped"] = true;
-G2L["397"]["BorderSizePixel"] = 0;
-G2L["397"]["TextScaled"] = true;
-G2L["397"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["397"]["TextSize"] = 14;
-G2L["397"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["397"]["TextColor3"] = Color3.fromRGB(213, 0, 5);
-G2L["397"]["BackgroundTransparency"] = 1;
-G2L["397"]["Size"] = UDim2.new(0, 200, 0, 26);
-G2L["397"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["397"]["Text"] = [[Error]];
-G2L["397"]["Name"] = [[a]];
-G2L["397"]["Position"] = UDim2.new(0.25818, 0, 0.06667, 0);
+-- StarterGui.hohol.ware.CeleryAB.Folder.2.Frame.name.UIAspectRatioConstraint
+G2L["397"] = Instance.new("UIAspectRatioConstraint", G2L["395"]);
+G2L["397"]["AspectRatio"] = 6.66667;
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.3Error.Dis
-G2L["398"] = Instance.new("TextLabel", G2L["38f"]);
+-- StarterGui.hohol.ware.CeleryAB.Folder.2.Frame.text
+G2L["398"] = Instance.new("TextLabel", G2L["392"]);
 G2L["398"]["TextWrapped"] = true;
 G2L["398"]["BorderSizePixel"] = 0;
 G2L["398"]["TextScaled"] = true;
 G2L["398"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["398"]["TextSize"] = 14;
 G2L["398"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["398"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["398"]["TextColor3"] = Color3.fromRGB(221, 202, 202);
 G2L["398"]["BackgroundTransparency"] = 1;
-G2L["398"]["Size"] = UDim2.new(0, 200, 0, 45);
+G2L["398"]["Size"] = UDim2.new(1, 0, 0.22857, 0);
 G2L["398"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["398"]["Text"] = [[ACS Version 1.7.5 hasn't been found!]];
-G2L["398"]["Name"] = [[Dis]];
-G2L["398"]["Position"] = UDim2.new(0.25818, 0, 0.35556, 0);
+G2L["398"]["Text"] = [[ACS not been founded :/]];
+G2L["398"]["Name"] = [[text]];
+G2L["398"]["Position"] = UDim2.new(0, 0, 0.44286, 0);
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.3Error.Close
-G2L["399"] = Instance.new("TextButton", G2L["38f"]);
-G2L["399"]["TextWrapped"] = true;
-G2L["399"]["BorderSizePixel"] = 0;
-G2L["399"]["TextSize"] = 14;
-G2L["399"]["TextColor3"] = Color3.fromRGB(213, 0, 5);
-G2L["399"]["TextScaled"] = true;
-G2L["399"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["399"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["399"]["Size"] = UDim2.new(0, 14, 0, 14);
-G2L["399"]["BackgroundTransparency"] = 1;
-G2L["399"]["Name"] = [[Close]];
-G2L["399"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["399"]["Text"] = [[X]];
-G2L["399"]["Position"] = UDim2.new(0.93455, 0, 0.06667, 0);
+-- StarterGui.hohol.ware.CeleryAB.Folder.2.Frame.text.UIAspectRatioConstraint
+G2L["399"] = Instance.new("UIAspectRatioConstraint", G2L["398"]);
+G2L["399"]["AspectRatio"] = 18.75;
 
--- StarterGui.hohol.ware.CeleryAB.NoficationFolder.3Error.UIAspectRatioConstraint
-G2L["39a"] = Instance.new("UIAspectRatioConstraint", G2L["38f"]);
-G2L["39a"]["AspectRatio"] = 3.05556;
+-- StarterGui.hohol.ware.CeleryAB.Folder.2.Frame.Scal
+G2L["39a"] = Instance.new("Frame", G2L["392"]);
+G2L["39a"]["BorderSizePixel"] = 0;
+G2L["39a"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 13);
+G2L["39a"]["Size"] = UDim2.new(1, 0, 0.04286, 0);
+G2L["39a"]["Position"] = UDim2.new(0, 0, 0.94286, 0);
+G2L["39a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["39a"]["Name"] = [[Scal]];
 
--- StarterGui.hohol.ware.CeleryAB.SoundFolder
-G2L["39b"] = Instance.new("Folder", G2L["1"]);
-G2L["39b"]["Name"] = [[SoundFolder]];
+-- StarterGui.hohol.ware.CeleryAB.Folder.2.Frame.Scal.Scal
+G2L["39b"] = Instance.new("Frame", G2L["39a"]);
+G2L["39b"]["BorderSizePixel"] = 0;
+G2L["39b"]["BackgroundColor3"] = Color3.fromRGB(255, 176, 177);
+G2L["39b"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["39b"]["Position"] = UDim2.new(0, 0, 0.7975, 0);
+G2L["39b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["39b"]["Name"] = [[Scal]];
 
--- StarterGui.hohol.ware.CeleryAB.SoundFolder.Notification
-G2L["39c"] = Instance.new("Sound", G2L["39b"]);
-G2L["39c"]["Volume"] = 0.25;
-G2L["39c"]["Name"] = [[Notification]];
-G2L["39c"]["SoundId"] = [[rbxassetid://7383525713]];
+-- StarterGui.hohol.ware.CeleryAB.Folder.2.Frame.Scal.Scal.UICorner
+G2L["39c"] = Instance.new("UICorner", G2L["39b"]);
+G2L["39c"]["CornerRadius"] = UDim.new(0, 80);
 
--- StarterGui.hohol.ware.CeleryAB.SoundFolder.UI_Click
-G2L["39d"] = Instance.new("Sound", G2L["39b"]);
-G2L["39d"]["Name"] = [[UI_Click]];
-G2L["39d"]["SoundId"] = [[rbxassetid://6895079853]];
+-- StarterGui.hohol.ware.CeleryAB.Folder.2.Frame.Scal.Scal.UIStroke
+G2L["39d"] = Instance.new("UIStroke", G2L["39b"]);
+G2L["39d"]["Transparency"] = 0.5;
+G2L["39d"]["Color"] = Color3.fromRGB(141, 160, 181);
 
--- StarterGui.hohol.ware.CeleryAB.SoundFolder.UI_CLOSE
-G2L["39e"] = Instance.new("Sound", G2L["39b"]);
-G2L["39e"]["Name"] = [[UI_CLOSE]];
-G2L["39e"]["SoundId"] = [[rbxassetid://17208372272]];
+-- StarterGui.hohol.ware.CeleryAB.Folder.2.Frame.Scal.UIAspectRatioConstraint
+G2L["39e"] = Instance.new("UIAspectRatioConstraint", G2L["39a"]);
+G2L["39e"]["AspectRatio"] = 100;
 
--- StarterGui.hohol.ware.CeleryAB.SoundFolder.Spawn
-G2L["39f"] = Instance.new("Sound", G2L["39b"]);
-G2L["39f"]["Name"] = [[Spawn]];
-G2L["39f"]["SoundId"] = [[rbxassetid://17208361335]];
+-- StarterGui.hohol.ware.CeleryAB.Folder.2.Frame.Close
+G2L["39f"] = Instance.new("TextButton", G2L["392"]);
+G2L["39f"]["TextWrapped"] = true;
+G2L["39f"]["BorderSizePixel"] = 0;
+G2L["39f"]["TextSize"] = 14;
+G2L["39f"]["TextColor3"] = Color3.fromRGB(196, 198, 221);
+G2L["39f"]["TextScaled"] = true;
+G2L["39f"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["39f"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["39f"]["Size"] = UDim2.new(0.05667, 0, 0.24286, 0);
+G2L["39f"]["BackgroundTransparency"] = 1;
+G2L["39f"]["Name"] = [[Close]];
+G2L["39f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["39f"]["Text"] = [[X]];
+G2L["39f"]["Position"] = UDim2.new(0.91333, 0, 0.1, 0);
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.2.Frame.Close.UIAspectRatioConstraint
+G2L["3a0"] = Instance.new("UIAspectRatioConstraint", G2L["39f"]);
+
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.2.Frame.ImageLabel
+G2L["3a1"] = Instance.new("ImageLabel", G2L["392"]);
+G2L["3a1"]["BorderSizePixel"] = 0;
+G2L["3a1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3a1"]["Image"] = [[http://www.roblox.com/asset/?id=7414445494]];
+G2L["3a1"]["Size"] = UDim2.new(0.06667, 0, 0.28571, 0);
+G2L["3a1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a1"]["BackgroundTransparency"] = 1;
+G2L["3a1"]["Position"] = UDim2.new(0.01667, 0, 0.07143, 0);
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.2.Frame.ImageLabel.UICorner
+G2L["3a2"] = Instance.new("UICorner", G2L["3a1"]);
+
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.2.Frame.ImageLabel.UIGradient
+G2L["3a3"] = Instance.new("UIGradient", G2L["3a1"]);
+G2L["3a3"]["Rotation"] = 90;
+G2L["3a3"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(253, 80, 83)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(98, 28, 30))};
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.2.Frame.ImageLabel.UIAspectRatioConstraint
+G2L["3a4"] = Instance.new("UIAspectRatioConstraint", G2L["3a1"]);
+
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.2.Frame.UIAspectRatioConstraint
+G2L["3a5"] = Instance.new("UIAspectRatioConstraint", G2L["392"]);
+G2L["3a5"]["AspectRatio"] = 4.28571;
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.2.UIAspectRatioConstraint
+G2L["3a6"] = Instance.new("UIAspectRatioConstraint", G2L["391"]);
+G2L["3a6"]["AspectRatio"] = 4.39706;
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.3
+G2L["3a7"] = Instance.new("Frame", G2L["37a"]);
+G2L["3a7"]["Visible"] = false;
+G2L["3a7"]["BorderSizePixel"] = 0;
+G2L["3a7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3a7"]["Size"] = UDim2.new(0.99667, 0, 0.25954, 0);
+G2L["3a7"]["Position"] = UDim2.new(0.38, 0, 0.03053, 0);
+G2L["3a7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a7"]["Name"] = [[3]];
+G2L["3a7"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.3.Frame
+G2L["3a8"] = Instance.new("Frame", G2L["3a7"]);
+G2L["3a8"]["BorderSizePixel"] = 0;
+G2L["3a8"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 19);
+G2L["3a8"]["Size"] = UDim2.new(1.00334, 0, 1.02941, 0);
+G2L["3a8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.3.Frame.UICorner
+G2L["3a9"] = Instance.new("UICorner", G2L["3a8"]);
+G2L["3a9"]["CornerRadius"] = UDim.new(0, 7);
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.3.Frame.UIStroke
+G2L["3aa"] = Instance.new("UIStroke", G2L["3a8"]);
+G2L["3aa"]["Transparency"] = 0.8;
+G2L["3aa"]["Color"] = Color3.fromRGB(35, 35, 45);
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.3.Frame.name
+G2L["3ab"] = Instance.new("TextLabel", G2L["3a8"]);
+G2L["3ab"]["TextWrapped"] = true;
+G2L["3ab"]["BorderSizePixel"] = 0;
+G2L["3ab"]["TextScaled"] = true;
+G2L["3ab"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3ab"]["TextSize"] = 14;
+G2L["3ab"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["3ab"]["TextColor3"] = Color3.fromRGB(203, 231, 255);
+G2L["3ab"]["BackgroundTransparency"] = 1;
+G2L["3ab"]["Size"] = UDim2.new(0.66667, 0, 0.42857, 0);
+G2L["3ab"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3ab"]["Text"] = [[Notification]];
+G2L["3ab"]["Name"] = [[name]];
+G2L["3ab"]["Position"] = UDim2.new(0.16667, 0, 0.01429, 0);
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.3.Frame.name.UIStroke
+G2L["3ac"] = Instance.new("UIStroke", G2L["3ab"]);
+G2L["3ac"]["Transparency"] = 0.75;
+G2L["3ac"]["Thickness"] = 1.25;
+G2L["3ac"]["Color"] = Color3.fromRGB(117, 29, 30);
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.3.Frame.name.UIAspectRatioConstraint
+G2L["3ad"] = Instance.new("UIAspectRatioConstraint", G2L["3ab"]);
+G2L["3ad"]["AspectRatio"] = 6.66667;
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.3.Frame.text
+G2L["3ae"] = Instance.new("TextLabel", G2L["3a8"]);
+G2L["3ae"]["TextWrapped"] = true;
+G2L["3ae"]["BorderSizePixel"] = 0;
+G2L["3ae"]["TextScaled"] = true;
+G2L["3ae"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3ae"]["TextSize"] = 14;
+G2L["3ae"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3ae"]["TextColor3"] = Color3.fromRGB(164, 184, 221);
+G2L["3ae"]["BackgroundTransparency"] = 1;
+G2L["3ae"]["Size"] = UDim2.new(1, 0, 0.22857, 0);
+G2L["3ae"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3ae"]["Text"] = [[HD Admin has been founded!]];
+G2L["3ae"]["Name"] = [[text]];
+G2L["3ae"]["Position"] = UDim2.new(0, 0, 0.44286, 0);
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.3.Frame.text.UIAspectRatioConstraint
+G2L["3af"] = Instance.new("UIAspectRatioConstraint", G2L["3ae"]);
+G2L["3af"]["AspectRatio"] = 18.75;
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.3.Frame.Scal
+G2L["3b0"] = Instance.new("Frame", G2L["3a8"]);
+G2L["3b0"]["BorderSizePixel"] = 0;
+G2L["3b0"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 13);
+G2L["3b0"]["Size"] = UDim2.new(1, 0, 0.04286, 0);
+G2L["3b0"]["Position"] = UDim2.new(0, 0, 0.94286, 0);
+G2L["3b0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3b0"]["Name"] = [[Scal]];
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.3.Frame.Scal.Scal
+G2L["3b1"] = Instance.new("Frame", G2L["3b0"]);
+G2L["3b1"]["BorderSizePixel"] = 0;
+G2L["3b1"]["BackgroundColor3"] = Color3.fromRGB(173, 198, 255);
+G2L["3b1"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["3b1"]["Position"] = UDim2.new(0, 0, 0.7975, 0);
+G2L["3b1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3b1"]["Name"] = [[Scal]];
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.3.Frame.Scal.Scal.UICorner
+G2L["3b2"] = Instance.new("UICorner", G2L["3b1"]);
+G2L["3b2"]["CornerRadius"] = UDim.new(0, 80);
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.3.Frame.Scal.Scal.UIStroke
+G2L["3b3"] = Instance.new("UIStroke", G2L["3b1"]);
+G2L["3b3"]["Transparency"] = 0.5;
+G2L["3b3"]["Color"] = Color3.fromRGB(141, 160, 181);
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.3.Frame.Scal.UIAspectRatioConstraint
+G2L["3b4"] = Instance.new("UIAspectRatioConstraint", G2L["3b0"]);
+G2L["3b4"]["AspectRatio"] = 100;
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.3.Frame.Close
+G2L["3b5"] = Instance.new("TextButton", G2L["3a8"]);
+G2L["3b5"]["TextWrapped"] = true;
+G2L["3b5"]["BorderSizePixel"] = 0;
+G2L["3b5"]["TextSize"] = 14;
+G2L["3b5"]["TextColor3"] = Color3.fromRGB(196, 198, 221);
+G2L["3b5"]["TextScaled"] = true;
+G2L["3b5"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["3b5"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3b5"]["Size"] = UDim2.new(0.05667, 0, 0.24286, 0);
+G2L["3b5"]["BackgroundTransparency"] = 1;
+G2L["3b5"]["Name"] = [[Close]];
+G2L["3b5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3b5"]["Text"] = [[X]];
+G2L["3b5"]["Position"] = UDim2.new(0.91333, 0, 0.1, 0);
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.3.Frame.Close.UIAspectRatioConstraint
+G2L["3b6"] = Instance.new("UIAspectRatioConstraint", G2L["3b5"]);
+
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.3.Frame.ImageLabel
+G2L["3b7"] = Instance.new("ImageLabel", G2L["3a8"]);
+G2L["3b7"]["BorderSizePixel"] = 0;
+G2L["3b7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3b7"]["Image"] = [[http://www.roblox.com/asset/?id=7414445494]];
+G2L["3b7"]["Size"] = UDim2.new(0.06667, 0, 0.28571, 0);
+G2L["3b7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3b7"]["BackgroundTransparency"] = 1;
+G2L["3b7"]["Position"] = UDim2.new(0.01667, 0, 0.07143, 0);
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.3.Frame.ImageLabel.UICorner
+G2L["3b8"] = Instance.new("UICorner", G2L["3b7"]);
+
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.3.Frame.ImageLabel.UIGradient
+G2L["3b9"] = Instance.new("UIGradient", G2L["3b7"]);
+G2L["3b9"]["Rotation"] = 90;
+G2L["3b9"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(195, 228, 253)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(94, 116, 132))};
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.3.Frame.ImageLabel.UIAspectRatioConstraint
+G2L["3ba"] = Instance.new("UIAspectRatioConstraint", G2L["3b7"]);
+
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.3.Frame.UIAspectRatioConstraint
+G2L["3bb"] = Instance.new("UIAspectRatioConstraint", G2L["3a8"]);
+G2L["3bb"]["AspectRatio"] = 4.28571;
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.3.UIAspectRatioConstraint
+G2L["3bc"] = Instance.new("UIAspectRatioConstraint", G2L["3a7"]);
+G2L["3bc"]["AspectRatio"] = 4.39706;
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.Nof
+G2L["3bd"] = Instance.new("Sound", G2L["37a"]);
+G2L["3bd"]["Name"] = [[Nof]];
+G2L["3bd"]["SoundId"] = [[rbxassetid://7518627362]];
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.NofError
+G2L["3be"] = Instance.new("Sound", G2L["37a"]);
+G2L["3be"]["Name"] = [[NofError]];
+G2L["3be"]["SoundId"] = [[rbxassetid://7518627362]];
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.NofError.PitchShiftSoundEffect
+G2L["3bf"] = Instance.new("PitchShiftSoundEffect", G2L["3be"]);
+G2L["3bf"]["Octave"] = 0.75;
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.NofError.EqualizerSoundEffect
+G2L["3c0"] = Instance.new("EqualizerSoundEffect", G2L["3be"]);
+G2L["3c0"]["MidGain"] = -5;
+G2L["3c0"]["LowGain"] = -10;
+G2L["3c0"]["HighGain"] = 1;
+
+-- StarterGui.hohol.ware.CeleryAB.Folder.NofError.DistortionSoundEffect
+G2L["3c1"] = Instance.new("DistortionSoundEffect", G2L["3be"]);
+G2L["3c1"]["Level"] = 0.5;
 
 -- StarterGui.hohol.ware.CeleryAB.Frame.LocalScript
 local function C_358()
