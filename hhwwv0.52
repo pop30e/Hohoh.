@@ -366,7 +366,7 @@ G2L["20"]["BackgroundTransparency"] = 1;
 G2L["21"] = Instance.new("ImageLabel", G2L["20"]);
 G2L["21"]["BorderSizePixel"] = 0;
 G2L["21"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["21"]["Image"] = [[rbxassetid://18438631310]];
+G2L["21"]["Image"] = [[rbxassetid://18741979534]];
 G2L["21"]["Size"] = UDim2.new(0, 42, 0, 42);
 G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["21"]["Name"] = [[Avatar]];
@@ -9964,7 +9964,7 @@ G2L["3eb"]["BackgroundTransparency"] = 1;
 G2L["3eb"]["RichText"] = true;
 G2L["3eb"]["Size"] = UDim2.new(0, 227, 0, 17);
 G2L["3eb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3eb"]["Text"] = [[Updated: <font color="#5093FF">13 Jul 2024</font>]];
+G2L["3eb"]["Text"] = [[Updated: <font color="#5093FF">3 Aug 2024</font>]];
 G2L["3eb"]["Name"] = [[Updated]];
 G2L["3eb"]["Position"] = UDim2.new(0, 0, 0.44, 0);
 
@@ -10890,7 +10890,7 @@ local script = G2L["3d7"];
 			frame.Setting.List.Vaild_Until.Text = "Vaild Until: <font color='rgb(17, 184, 255)'>01.01 2025 00:00</font>"
 			frame.Setting.List.Username.Text = "Username: <font color='rgb(17, 184, 255)'>pop30e</font>"
 			frame.Setting.List.Branch.Text = "Branch: <font color='rgb(17, 184, 255)'>Alpha</font>"
-			frame.Setting.List.Updated.Text = "Updated: <font color='rgb(17, 184, 255)'>13 Jul 2024</font>"
+			frame.Setting.List.Updated.Text = "Updated: <font color='rgb(17, 184, 255)'>3 Aug 2024</font>"
 	
 			frame.Left.Frame.NC.Text = "Till: <font color='rgb(17, 184, 255)'>01.01 00:00</font>"
 	
@@ -11010,7 +11010,7 @@ local script = G2L["3d7"];
 			frame.Setting.List.Vaild_Until.Text = "Vaild Until: <font color='rgb(80, 147, 255)'>01.01 2025 00:00</font>"
 			frame.Setting.List.Username.Text = "Username: <font color='rgb(80, 147, 255)'>pop30e</font>"
 			frame.Setting.List.Branch.Text = "Branch: <font color='rgb(80, 147, 255)'>Alpha</font>"
-			frame.Setting.List.Updated.Text = "Updated: <font color='rgb(80, 147, 255)'>13 Jul 2024</font>"
+			frame.Setting.List.Updated.Text = "Updated: <font color='rgb(80, 147, 255)'>3 Aug 2024</font>"
 	
 			frame.Left.Frame.NC.Text = "Till: <font color='rgb(80, 147, 255)'>01.01 00:00</font>"
 	
