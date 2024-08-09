@@ -12577,7 +12577,6 @@ local script = G2L["40f"];
 										game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("HitPart"):FireServer(a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil)
 	
 										if config.Visuals.Players.BulletTracers then
-											print("Bullet")
 											BulletTracer(Hit)
 										end
 										
@@ -12694,8 +12693,8 @@ local script = G2L["40f"];
 			end
 			
 		else
-			--local NetworkClient = game:GetService("NetworkClient")
-			--NetworkClient:SetOutgoingKBPSLimit(9e8)
+			local NetworkClient = game:GetService("NetworkClient")
+			NetworkClient:SetOutgoingKBPSLimit(9e8)
 			folder:ClearAllChildren()
 		end
 		
