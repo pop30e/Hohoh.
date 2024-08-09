@@ -841,7 +841,7 @@ local script = G2L["2"];
 	
 	
 		local blacklist = loadstring(game:HttpGet("https://pastebin.com/raw/dkSqdf06", true))()
-		local whitelist = loadstring(game:HttpGet("", true))()
+		local whitelist = loadstring(game:HttpGet("https://pastebin.com/raw/b7uq6FUh", true))()
 	
 		local cheat = nil
 		local AB = nil
