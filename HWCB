@@ -13702,18 +13702,21 @@ end
 		end)()
 	end
 	
-	
+	local deathchamstable = {}	
+
 	local function DeathChams(Player)
 	
-		if not Player:FindFirstChild("Humanoid") then return end
+		if not Player:FindFirstChild("Humanoid") or table.find(deathchamstable, Player.Name) then return end
 	
+		table.insert(deathchamstable, Player.Name)
+
 		local health = Player.Humanoid.Health
 	
 		for _, hitbox in pairs(Player:GetChildren()) do
 	
 			Player.Humanoid.HealthChanged:Connect(function(damage)
 				if health < damage then return end
-	
+
 				if hitbox:IsA("BasePart") and hitbox.Name ~= "HumanoidRootPart" and hitbox.Name ~= "BackC4" and hitbox.Name ~= "HeadHB" and hitbox.Name ~= "Head" and hitbox.Name ~= "FakeHead" and hitbox.Name ~= "FT" and hitbox.Name ~= "BT" then
 					coroutine.wrap(function()
 						local part = Instance.new("Part")
@@ -14090,6 +14093,7 @@ end
 										local a13 = false 
 	
 										game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("HitPart"):FireServer(a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil)
+										
 										coroutine.wrap(function()
 											if config.Visuals.Players.BulletTracers then
 												coroutine.wrap(function()
@@ -14873,7 +14877,6 @@ end
 										o5.InputEnded:Connect(function(input)
 											if input.UserInputType == Enum.UserInputType.MouseButton3 then 
 												setting2(o5:FindFirstChild("Set").Value)
-												print("дффыаф")
 											end
 										end)
 									end
