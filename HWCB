@@ -12054,6 +12054,8 @@ local script = G2L["27"];
 	
 												if table.find({"ShadowBlur", "Fog", "FogVisible", "SunRays_I", "SunRays_S", "Transparency", "TBehideWall"}, transformer) then
 													one = 100
+												elseif transformer == "Exposure" then
+													one = 20
 												end
 	
 												local position = UDim2.new(0, o4/gr*one, -1.798, 0)
@@ -12715,131 +12717,135 @@ end
 	
 	end
 	
-	function scroll(input, scrollframe)
-	
-		local sym = ""
-		local gr = 1
-		local one = 1
-		local lens = scrollframe.Size.X.Offset
-		local str = nil
-	
-		if string.find(scrollframe.TextLabel.Text, "°") then
-			sym = "°"
-		elseif string.find(scrollframe.TextLabel.Text, "%%") then
-			sym = "%"
-		end
-	
-		if sym == "" then
-			str = "0"
-		elseif sym == "°" then
-			gr = 2
-		end
-	
-		if table.find({"BlurShadow", "Fog", "Fog Visible", "SunRays_I", "SunRays_S", "Transparency", "T Behide Wall"}, scrollframe.Parent.NameFunc.Text) then
-			one = 100
-		elseif scrollframe.Parent.NameFunc.Text == "Exposure" then
-			one = 20
-		elseif table.find({"Glare", "Haze"}, scrollframe.Parent.NameFunc.Text) then
-			one = 10
-		elseif table.find({"Distance FT", "Distance BT"}, scrollframe.Parent.NameFunc.Text) then
-			one = 20
-		elseif scrollframe.Parent.NameFunc.Text == "Field of View" and scrollframe.Parent.Parent.Parent.Parent.Name == "Legit" then
-			one = 2.22222222
-		elseif scrollframe.Parent.NameFunc.Text == "Smooth" then
-			one = 2
-		elseif scrollframe.Parent.NameFunc.Text == "Reaction Time" then
-			gr = 10
-			one = 2
-		elseif scrollframe.Parent.NameFunc.Text == "Reaction Time Reset Time" then
-			gr = 10
-		end
-	
-		local delta = input.Position - dragStart
-		local deltax = delta.X + startPos.X.Offset + nowPos.X.Offset
-	
-	
-	
-		local data = {
-			text = string.gsub(scrollframe.Parent.NameFunc.Text, " ", "");
-			frame = string.gsub(scrollframe.Parent.Parent.Parent.Name, " ", "");
-			funct = string.gsub(scrollframe.Parent.Parent.Parent.Parent.Name, " ", "")
-		}
-	
-		if data.funct == "EspPreview" then
-			data.funct = "Visuals"
-			data.frame = "EspPreview"
-		end
-	
-		local value = scrollframe.Parent.Parent:FindFirstChild("Value")
-		local locate = config[data.funct][data.frame][data.text]
-	
-	
-		if locate == nil and value ~= nil then
-			if config[data.funct][data.frame][value.Value] ~= nil then
-				locate = config[data.funct][data.frame][value.Value][data.text]
-			end
-		end
-	
-		if config[data.funct] ~= nil and config[data.funct][data.frame] ~= nil and locate ~= nil then
-			if deltax < lens and deltax > -1 then
-				local position = UDim2.new(0, deltax, -1.798, 0)
-	
-				local size = UDim2.new(startSize.X.Scale, deltax,
-					startSize.Y.Scale, startSize.Y.Offset)
-	
-				game:GetService('TweenService'):Create(scrollframe.Scroll, TweenInfo.new(0.25), {Size = size}):Play()
-				game:GetService('TweenService'):Create(scrollframe.Circle, TweenInfo.new(0.25), {Position = position}):Play()
-	
-				if not table.find({"BlurShadow", "Fog", "Fog Visible", "Glare", "Haze", "SunRays_I", "SunRays_S", "Transparency", "T Behide Wall"}, scrollframe.Parent.NameFunc.Text) then
-					scrollframe.TextLabel.Text = (math.round(deltax*gr/one))..sym
-				else
-					scrollframe.TextLabel.Text = (deltax*gr/one)..sym
-				end
-				if value ~= nil then
-					config[data.funct][data.frame][value.Value][data.text] = tonumber(deltax*gr/one)
-				else
-					config[data.funct][data.frame][data.text] = tonumber(deltax*gr/one)
-				end
-			elseif deltax > lens then
-				local position = UDim2.new(0, lens, -1.798, 0)
-	
-				local size = UDim2.new(startSize.X.Scale, lens,
-					startSize.Y.Scale, startSize.Y.Offset)
-	
-				game:GetService('TweenService'):Create(scrollframe.Scroll, TweenInfo.new(0.25), {Size = size}):Play()
-				game:GetService('TweenService'):Create(scrollframe.Circle, TweenInfo.new(0.25), {Position = position}):Play()
-	
-				scrollframe.TextLabel.Text = math.round(lens*gr/one)..sym
-				if value ~= nil then
-					config[data.funct][data.frame][value.Value][data.text] = tonumber(math.round(lens*gr/one))
-				else
-					config[data.funct][data.frame][data.text] = tonumber(math.round(lens*gr/one))
-				end
-			elseif deltax < 0 then
-				local position = UDim2.new(0, 0, -1.798, 0)
-	
-				local size = UDim2.new(startSize.X.Scale, 0,
-					startSize.Y.Scale, startSize.Y.Offset)
-	
-				game:GetService('TweenService'):Create(scrollframe.Scroll, TweenInfo.new(0.25), {Size = size}):Play()
-				game:GetService('TweenService'):Create(scrollframe.Circle, TweenInfo.new(0.25), {Position = position}):Play()
-	
-				if str == nil then
-					scrollframe.TextLabel.Text = "0"..sym
-				else
-					scrollframe.TextLabel.Text = str
-				end
-	
-				if value ~= nil then
-					config[data.funct][data.frame][value.Value][data.text] = tonumber(0)
-				else
-					config[data.funct][data.frame][data.text] = tonumber(0)
-				end
-			end
-		else
-			warn("Чота не так. Не может найти в Config. Config == nil")
+function scroll(input, scrollframe)
+
+	local sym = ""
+	local gr = 1
+	local one = 1
+	local lens = scrollframe.Size.X.Offset
+	local str = nil
+
+	if string.find(scrollframe.TextLabel.Text, "°") then
+		sym = "°"
+	elseif string.find(scrollframe.TextLabel.Text, "%%") then
+		sym = "%"
+	end
+
+	if sym == "" then
+		str = "0"
+	elseif sym == "°" then
+		gr = 2
+	end
+
+	local minus = 0
+
+	if table.find({"Shadow Blur", "Fog", "Fog Visible", "SunRays_I", "SunRays_S", "Transparency", "T Behide Wall"}, scrollframe.Parent.NameFunc.Text) then
+		one = 100
+	elseif scrollframe.Parent.NameFunc.Text == "Exposure" then
+		one = 20
+		minus = 3
+	elseif table.find({"Glare", "Haze"}, scrollframe.Parent.NameFunc.Text) then
+		one = 10
+	elseif table.find({"Distance FT", "Distance BT"}, scrollframe.Parent.NameFunc.Text) then
+		one = 20
+	elseif scrollframe.Parent.NameFunc.Text == "Field of View" and scrollframe.Parent.Parent.Parent.Parent.Name == "Legit" then
+		one = 2.22222222
+	elseif scrollframe.Parent.NameFunc.Text == "Smooth" then
+		one = 2
+	elseif scrollframe.Parent.NameFunc.Text == "Reaction Time" then
+		gr = 10
+		one = 2
+	elseif scrollframe.Parent.NameFunc.Text == "Reaction Time Reset Time" then
+		gr = 10
+	end
+
+	local delta = input.Position - dragStart
+	local deltax = delta.X + startPos.X.Offset + nowPos.X.Offset
+
+	print(deltax)
+
+
+	local data = {
+		text = string.gsub(scrollframe.Parent.NameFunc.Text, " ", "");
+		frame = string.gsub(scrollframe.Parent.Parent.Parent.Name, " ", "");
+		funct = string.gsub(scrollframe.Parent.Parent.Parent.Parent.Name, " ", "")
+	}
+
+	if data.funct == "EspPreview" then
+		data.funct = "Visuals"
+		data.frame = "EspPreview"
+	end
+
+	local value = scrollframe.Parent.Parent:FindFirstChild("Value")
+	local locate = config[data.funct][data.frame][data.text]
+
+
+	if locate == nil and value ~= nil then
+		if config[data.funct][data.frame][value.Value] ~= nil then
+			locate = config[data.funct][data.frame][value.Value][data.text]
 		end
 	end
+
+	if config[data.funct] ~= nil and config[data.funct][data.frame] ~= nil and locate ~= nil then
+		if deltax < lens and deltax > -1 then
+			local position = UDim2.new(0, deltax, -1.798, 0)
+
+			local size = UDim2.new(startSize.X.Scale, deltax,
+				startSize.Y.Scale, startSize.Y.Offset)
+
+			game:GetService('TweenService'):Create(scrollframe.Scroll, TweenInfo.new(0.25), {Size = size}):Play()
+			game:GetService('TweenService'):Create(scrollframe.Circle, TweenInfo.new(0.25), {Position = position}):Play()
+
+			if not table.find({"Shadow Blur", "Fog", "Fog Visible", "Glare", "Haze", "SunRays_I", "SunRays_S", "Transparency", "T Behide Wall"}, scrollframe.Parent.NameFunc.Text) then
+				scrollframe.TextLabel.Text = (math.round(deltax*gr/one))..sym
+			else
+				scrollframe.TextLabel.Text = (deltax*gr/one)..sym
+			end
+			if value ~= nil then
+				config[data.funct][data.frame][value.Value][data.text] = tonumber(deltax*gr/one-minus)
+			else
+				config[data.funct][data.frame][data.text] = tonumber(deltax*gr/one-minus)
+			end
+		elseif deltax > lens then
+			local position = UDim2.new(0, lens, -1.798, 0)
+
+			local size = UDim2.new(startSize.X.Scale, lens,
+				startSize.Y.Scale, startSize.Y.Offset)
+
+			game:GetService('TweenService'):Create(scrollframe.Scroll, TweenInfo.new(0.25), {Size = size}):Play()
+			game:GetService('TweenService'):Create(scrollframe.Circle, TweenInfo.new(0.25), {Position = position}):Play()
+
+			scrollframe.TextLabel.Text = math.round(lens*gr/one)..sym
+			if value ~= nil then
+				config[data.funct][data.frame][value.Value][data.text] = tonumber(math.round(lens*gr/one-minus))
+			else
+				config[data.funct][data.frame][data.text] = tonumber(math.round(lens*gr/one-minus))
+			end
+		elseif deltax < 0 then
+			local position = UDim2.new(0, 0, -1.798, 0)
+
+			local size = UDim2.new(startSize.X.Scale, 0,
+				startSize.Y.Scale, startSize.Y.Offset)
+
+			game:GetService('TweenService'):Create(scrollframe.Scroll, TweenInfo.new(0.25), {Size = size}):Play()
+			game:GetService('TweenService'):Create(scrollframe.Circle, TweenInfo.new(0.25), {Position = position}):Play()
+
+			if str == nil then
+				scrollframe.TextLabel.Text = "0"..sym
+			else
+				scrollframe.TextLabel.Text = str
+			end
+
+			if value ~= nil then
+				config[data.funct][data.frame][value.Value][data.text] = tonumber(0-minus)
+			else
+				config[data.funct][data.frame][data.text] = tonumber(0-minus)
+			end
+		end
+	else
+		warn("Чота не так. Не может найти в Config. Config == nil")
+	end
+end
 	
 	function pe(input, scrollframe)
 	
