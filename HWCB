@@ -12139,18 +12139,11 @@ local script = G2L["27"];
 													c.TextLabel.Text = table.concat(list, ", ")
 												end
 	
-												if type(o4) == "table" then
+												if type(o4) == "userdata" then
 													if o5.Name == "NameFunc" and o5.Parent:FindFirstChild("Color") then
 														local transformer = string.gsub(o5.Text, " ", "")
 														if o2[transformer] == o3 then
-															
-															
-															local r = o4[1]
-															local g = o4[2]
-															local b = o4[3]
-															
-															o5.Parent:FindFirstChild("Color").BackgroundColor3 = Color3.fromRGB(r,g,b)
-															o4 = Color3.fromRGB(r,g,b)
+															o5.Parent:FindFirstChild("Color").BackgroundColor3 = o4
 														end
 													end
 												end
@@ -13146,7 +13139,7 @@ end
 	
 						if locate == nil and value ~= nil then
 							if config[data.funct][data.frame][value.Value] ~= nil then
-								locate = config[data.funct][data.frame][value.Valuee][data.text2]
+								locate = config[data.funct][data.frame][value.Value][data.text2]
 							end
 						end
 	
