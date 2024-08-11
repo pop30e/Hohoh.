@@ -12248,7 +12248,7 @@ end
 							if type(color1) == "table" then
 								for i4, color2 in pairs(color1) do
 									if type(color2) == "table" then
-										color2 = Color3.fromRGB(color2[R], color2[G], color2[B])
+										color2 = Color3.fromRGB(color2.R, color2.G, color2.B)
 										copy[i1][i2][i3][i4] = color2
 									end
 								end
@@ -12259,12 +12259,11 @@ end
 			end
 			
 			task.wait()
-			if type(copy.Visuals.Common.Ambience_Setting.Color) == "table" then
+			if type(copy.Visuals.Common.Ambience_Setting.Color) == "userdata" then
 				print("success")
 			else
 				print("error")
 			end
-			print(copy.Visuals.Common.Ambience_Setting.Color)
 	
 			config = copy
 			update()
