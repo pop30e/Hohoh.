@@ -13788,14 +13788,6 @@ end
 		return Pos
 	end
 	
-	function CheckPlayer(Player)
-		if Player and Player:FindFirstChild("Humanoid") and Player:FindFirstChild("Humanoid").Health > 0 and Player.Name ~= LocalPlayer.Name and game.Players:FindFirstChild(Player.Name).Team ~= "TTT" and game.Players:FindFirstChild(Player.Name).Team ~= LocalPlayer.Team then
-			return true
-		else
-			return false
-		end
-	end
-	
 	function GetSpectators()
 		local CurrentSpectators = {}
 	
@@ -13819,6 +13811,7 @@ end
 	
 	game:GetService("RunService").RenderStepped:Connect(function(step)
 	
+		LocalPlayer = game:GetService("Players").LocalPlayer
 		local CamCFrame = Camera.CFrame
 		local CamLook = CamCFrame.LookVector
 	
@@ -13826,6 +13819,14 @@ end
 			LocalPlayerIsAlive = true
 		else
 			LocalPlayerIsAlive = false
+		end
+
+		local function CheckPlayer(Player)
+			if Player and Player:FindFirstChild("Humanoid") and Player:FindFirstChild("Humanoid").Health > 0 and Player.Name ~= LocalPlayer.Name and game.Players:FindFirstChild(Player.Name).Team ~= "TTT" and game.Players:FindFirstChild(Player.Name).Team ~= LocalPlayer.Team then
+				return true
+			else
+				return false
+			end
 		end
 	
 		if config.Rage.Main.Enabled and LocalPlayerIsAlive then
