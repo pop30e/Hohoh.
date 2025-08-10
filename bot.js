@@ -1,4 +1,5 @@
 (async () => {
+  // Конфигурация
   const CONFIG = {
     START_X: 742,
     START_Y: 1148,
@@ -12,9 +13,15 @@
       highlight: '#775ce3',
       success: '#00ff00',
       error: '#ff0000'
+    },
+    PALETTE: {
+      "0,0,0": 1, "60,60,60": 2, "120,120,120": 3, "210,210,210": 4, "255,255,255": 5,
+      "96,0,24": 6, "237,28,36": 7, "255,127,39": 8, "246,170,9": 9, "249,221,59": 10,
+      // ... (остальные цвета палитры)
     }
   };
 
+  // Состояние приложения
   const state = {
     running: false,
     paintedCount: 0,
@@ -23,19 +30,39 @@
     lastPixel: null,
     minimized: false,
     menuOpen: false,
-    language: 'en'
+    language: 'en',
+    template: null,
+    tileData: null,
+    cookie: null
   };
 
+  // Вспомогательные функции
   const sleep = ms => new Promise(r => setTimeout(r, ms));
 
+  const duration = (durationMs) => {
+    const seconds = Math.floor((durationMs / 1000) % 60);
+    const minutes = Math.floor((durationMs / (1000 * 60)) % 60);
+    const hours = Math.floor(durationMs / (1000 * 60 * 60));
+    const parts = [];
+    if (hours) parts.push(`${hours} hour${hours === 1 ? '' : 's'}`);
+    if (minutes) parts.push(`${minutes} minute${minutes === 1 ? '' : 's'}`);
+    if (seconds || parts.length === 0) parts.push(`${seconds} second${seconds === 1 ? '' : 's'}`);
+    return parts.join(' ');
+  };
+
+  // API функции
   const fetchAPI = async (url, options = {}) => {
     try {
       const res = await fetch(url, {
         credentials: 'include',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+          ...options.headers
+        },
         ...options
       });
       
-      // Обработка 403 ошибки и других статусов
       if (!res.ok) {
         const errorData = await res.json().catch(() => null);
         return {
@@ -54,34 +81,64 @@
     }
   };
 
+  // Функции для работы с пикселями
   const getRandomPosition = () => ({
     x: Math.floor(Math.random() * CONFIG.PIXELS_PER_LINE),
     y: Math.floor(Math.random() * CONFIG.PIXELS_PER_LINE)
   });
 
-  const paintPixel = async (x, y) => {
-    const randomColor = Math.floor(Math.random() * 31) + 1;
-    
-    // Рассчитываем правильные координаты чанка
+  const paintPixel = async (x, y, color) => {
     const absX = CONFIG.START_X + x;
     const absY = CONFIG.START_Y + y;
     const chunkX = Math.floor(absX / CONFIG.PIXELS_PER_LINE) * CONFIG.PIXELS_PER_LINE;
     const chunkY = Math.floor(absY / CONFIG.PIXELS_PER_LINE) * CONFIG.PIXELS_PER_LINE;
-    
-    // Относительные координаты внутри чанка
     const relX = absX - chunkX;
     const relY = absY - chunkY;
 
     return await fetchAPI(`https://backend.wplace.live/s0/pixel/${chunkX}/${chunkY}`, {
       method: 'POST',
-      headers: { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify({ coords: [relX, relY], colors: [randomColor] })
+      body: JSON.stringify({
+        coords: [relX, relY],
+        colors: [color || Math.floor(Math.random() * 31) + 1]
+      })
     });
   };
 
+  const loadTileData = async () => {
+    const chunkX = Math.floor(CONFIG.START_X / CONFIG.PIXELS_PER_LINE) * CONFIG.PIXELS_PER_LINE;
+    const chunkY = Math.floor(CONFIG.START_Y / CONFIG.PIXELS_PER_LINE) * CONFIG.PIXELS_PER_LINE;
+    
+    const response = await fetch(`https://backend.wplace.live/files/s0/tiles/${chunkX}/${chunkY}.png`);
+    const blob = await response.blob();
+    const img = await createImageBitmap(blob);
+    
+    const canvas = new OffscreenCanvas(img.width, img.height);
+    const ctx = canvas.getContext('2d');
+    ctx.drawImage(img, 0, 0);
+    const imageData = ctx.getImageData(0, 0, img.width, img.height);
+    
+    const tileData = Array.from({ length: img.width }, () => new Array(img.height).fill(0));
+    
+    for (let y = 0; y < img.height; y++) {
+      for (let x = 0; x < img.width; x++) {
+        const i = (y * img.width + x) * 4;
+        const r = imageData.data[i];
+        const g = imageData.data[i + 1];
+        const b = imageData.data[i + 2];
+        const a = imageData.data[i + 3];
+        
+        if (a === 255) {
+          const colorKey = `${r},${g},${b}`;
+          tileData[x][y] = CONFIG.PALETTE[colorKey] || 0;
+        }
+      }
+    }
+    
+    state.tileData = tileData;
+    return tileData;
+  };
+
+  // Функции пользователя
   const getCharge = async () => {
     const data = await fetchAPI('https://backend.wplace.live/s0/me');
     if (data && !data.error) {
@@ -99,15 +156,11 @@
   };
 
   const detectUserLocation = () => {
-    // Используем язык браузера вместо CORS запроса
     const browserLang = navigator.language || navigator.userLanguage;
-    if (browserLang.startsWith('pt')) {
-      state.language = 'pt';
-    } else {
-      state.language = 'en';
-    }
+    state.language = browserLang.startsWith('pt') ? 'pt' : 'en';
   };
 
+  // Основной цикл рисования
   const paintLoop = async () => {
     while (state.running) {
       const { count, cooldownMs } = state.charges;
@@ -122,43 +175,95 @@
         continue;
       }
 
-      const randomPos = getRandomPosition();
-      const paintResult = await paintPixel(randomPos.x, randomPos.y);
-      
-      // Обработка разных типов ошибок
-      if (paintResult?.painted === 1) {
-        state.paintedCount++;
-        state.lastPixel = { 
-          x: CONFIG.START_X + randomPos.x,
-          y: CONFIG.START_Y + randomPos.y,
-          time: new Date() 
-        };
-        state.charges.count--;
+      // Если есть шаблон - рисуем по нему
+      if (state.template) {
+        await paintTemplate();
+      } 
+      // Иначе - случайные пиксели
+      else {
+        const randomPos = getRandomPosition();
+        const paintResult = await paintPixel(randomPos.x, randomPos.y);
         
-        document.getElementById('paintEffect').style.animation = 'pulse 0.5s';
-        setTimeout(() => {
-          document.getElementById('paintEffect').style.animation = '';
-        }, 500);
-        
-        updateUI(state.language === 'pt' ? '✅ Pixel pintado!' : '✅ Pixel painted!', 'success');
-      } else {
-        let errorMsg = state.language === 'pt' ? '❌ Falha ao pintar' : '❌ Failed to paint';
-        
-        if (paintResult?.status === 403) {
-          errorMsg = state.language === 'pt' 
-            ? '❌ Proibido (sem autorização?)' 
-            : '❌ Forbidden (unauthorized?)';
+        if (paintResult?.painted === 1) {
+          state.paintedCount++;
+          state.lastPixel = { 
+            x: CONFIG.START_X + randomPos.x,
+            y: CONFIG.START_Y + randomPos.y,
+            time: new Date() 
+          };
+          state.charges.count--;
+          
+          document.getElementById('paintEffect').style.animation = 'pulse 0.5s';
+          setTimeout(() => {
+            document.getElementById('paintEffect').style.animation = '';
+          }, 500);
+          
+          updateUI(state.language === 'pt' ? '✅ Pixel pintado!' : '✅ Pixel painted!', 'success');
+        } else {
+          let errorMsg = state.language === 'pt' ? '❌ Falha ao pintar' : '❌ Failed to paint';
+          if (paintResult?.status === 403) {
+            errorMsg = state.language === 'pt' 
+              ? '❌ Proibido (sem autorização?)' 
+              : '❌ Forbidden (unauthorized?)';
+          }
+          else if (paintResult?.message) {
+            errorMsg = `❌ ${paintResult.message}`;
+          }
+          updateUI(errorMsg, 'error');
         }
-        else if (paintResult?.message) {
-          errorMsg = `❌ ${paintResult.message}`;
-        }
-        
-        updateUI(errorMsg, 'error');
       }
 
       await sleep(CONFIG.DELAY);
       updateStats();
     }
+  };
+
+  // Функции для работы с шаблонами
+  const setTemplate = (template) => {
+    state.template = template;
+  };
+
+  const paintTemplate = async () => {
+    if (!state.template || !state.tileData) return 0;
+    
+    const body = { colors: [], coords: [] };
+    let pixelsUsed = 0;
+    
+    for (let y = 0; y < state.template.height; y++) {
+      for (let x = 0; x < state.template.width; x++) {
+        const templateColor = state.template.data[x][y];
+        const currentColor = state.tileData[CONFIG.START_X + x][CONFIG.START_Y + y];
+        
+        if (templateColor !== 0 && templateColor !== currentColor) {
+          body.colors.push(templateColor);
+          body.coords.push(x, y);
+          pixelsUsed++;
+          
+          if (pixelsUsed >= state.charges.count) break;
+        }
+      }
+      if (pixelsUsed >= state.charges.count) break;
+    }
+    
+    if (pixelsUsed > 0) {
+      const result = await paintArea(body);
+      if (result?.painted === pixelsUsed) {
+        state.paintedCount += pixelsUsed;
+        return pixelsUsed;
+      }
+    }
+    
+    return 0;
+  };
+
+  const paintArea = async (body) => {
+    const chunkX = Math.floor(CONFIG.START_X / CONFIG.PIXELS_PER_LINE) * CONFIG.PIXELS_PER_LINE;
+    const chunkY = Math.floor(CONFIG.START_Y / CONFIG.PIXELS_PER_LINE) * CONFIG.PIXELS_PER_LINE;
+    
+    return await fetchAPI(`https://backend.wplace.live/s0/pixel/${chunkX}/${chunkY}`, {
+      method: 'POST',
+      body: JSON.stringify(body)
+    });
   };
 
   const createUI = () => {
@@ -498,5 +603,6 @@
   detectUserLocation();
   createUI();
   await getCharge();
+  await loadTileData();
   updateStats();
 })();
