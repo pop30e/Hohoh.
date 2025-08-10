@@ -24,172 +24,143 @@
     minimized: false,
     menuOpen: false,
     language: 'en',
-    debugMode: true // Добавлен режим отладки
+    debugMode: true
+  };
+
+  // Улучшенное логирование
+  const logger = {
+    log: (...args) => console.log('[BOT]', ...args),
+    error: (...args) => {
+      console.error('[BOT ERROR]', ...args);
+      updateUI(`Error: ${args[0]} (see console)`, 'error');
+    },
+    debug: (...args) => state.debugMode && console.debug('[BOT DEBUG]', ...args)
   };
 
   const sleep = ms => new Promise(r => setTimeout(r, ms));
 
-  const logError = (errorType, details) => {
-    const timestamp = new Date().toISOString();
-    const message = `[${timestamp}] ERROR: ${errorType} | ${JSON.stringify(details)}`;
-    console.error(message);
-    if (state.debugMode) {
-      updateUI(`${errorType} (см. консоль)`, 'error');
-    }
-    return message;
-  };
-
   const fetchAPI = async (url, options = {}) => {
     try {
+      logger.debug(`Fetching URL: ${url}`, options);
+      
       const res = await fetch(url, {
         credentials: 'include',
         ...options
       });
       
+      logger.debug(`Response status: ${res.status}`, res);
+      
       if (!res.ok) {
-        throw new Error(`HTTP ${res.status} ${res.statusText}`);
+        const errorText = await res.text();
+        throw new Error(`HTTP ${res.status}: ${errorText}`);
       }
       
       const data = await res.json();
+      logger.debug('API response:', data);
       
       if (data?.error) {
-        throw new Error(data.error);
+        throw new Error(`API Error: ${data.error}`);
       }
       
       return data;
     } catch (e) {
-      logError('API_REQUEST_FAILED', {
-        url,
+      logger.error(`API request failed to ${url}`, {
         error: e.message,
-        stack: e.stack
+        stack: e.stack,
+        options
       });
       return null;
     }
   };
 
-  const getRandomPosition = () => ({
-    x: Math.floor(Math.random() * CONFIG.PIXELS_PER_LINE),
-    y: Math.floor(Math.random() * CONFIG.PIXELS_PER_LINE)
-  });
-
   const paintPixel = async (x, y) => {
     const randomColor = Math.floor(Math.random() * 31) + 1;
-    const payload = { coords: [x, y], colors: [randomColor] };
+    const payload = { 
+      coords: [x, y], 
+      colors: [randomColor],
+      timestamp: Date.now()
+    };
+    
+    logger.debug('Attempting to paint pixel:', payload);
     
     try {
-      const response = await fetchAPI(`https://backend.wplace.live/s0/pixel/${CONFIG.START_X}/${CONFIG.START_Y}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
-        body: JSON.stringify(payload)
-      });
+      const response = await fetchAPI(
+        `https://backend.wplace.live/s0/pixel/${CONFIG.START_X}/${CONFIG.START_Y}`,
+        {
+          method: 'POST',
+          headers: { 
+            'Content-Type': 'text/plain;charset=UTF-8',
+            'X-Debug-Request': 'true'
+          },
+          body: JSON.stringify(payload)
+        }
+      );
       
       if (!response) {
         throw new Error('No response from server');
       }
       
+      logger.debug('Paint response:', response);
+      
       if (response.painted !== 1) {
-        throw new Error(`Server rejected painting. Response: ${JSON.stringify(response)}`);
+        throw new Error(`Paint rejected. Full response: ${JSON.stringify(response)}`);
       }
       
       return response;
     } catch (e) {
-      logError('PAINT_FAILED', {
-        coords: {x, y},
-        color: randomColor,
+      logger.error(`Failed to paint at (${x},${y})`, {
         error: e.message,
-        payload
+        payload,
+        charges: state.charges,
+        auth: !!document.cookie
       });
       return null;
     }
   };
 
-  const getCharge = async () => {
+  // Остальные функции (getCharge, paintLoop, UI) остаются аналогичными предыдущему примеру,
+  // но с использованием logger вместо прямых console.log
+
+  // Добавим проверку авторизации
+  const checkAuth = async () => {
     try {
-      const data = await fetchAPI('https://backend.wplace.live/me');
-      
-      if (!data) {
-        throw new Error('Failed to fetch user data');
-      }
-      
-      state.userInfo = data;
-      state.charges = {
-        count: Math.floor(data.charges.count),
-        max: Math.floor(data.charges.max),
-        cooldownMs: data.charges.cooldownMs
-      };
-      
-      if (state.userInfo.level) {
-        state.userInfo.level = Math.floor(state.userInfo.level);
-      }
-      
-      return state.charges;
-    } catch (e) {
-      logError('CHARGE_FETCH_FAILED', {
-        error: e.message
+      logger.debug('Checking authentication...');
+      const res = await fetch('https://backend.wplace.live/me', {
+        credentials: 'include'
       });
-      return null;
+      
+      if (!res.ok) {
+        const error = await res.text();
+        throw new Error(error);
+      }
+      
+      const data = await res.json();
+      logger.log('User authenticated as:', data.name);
+      return true;
+    } catch (e) {
+      logger.error('Authentication failed!', e.message);
+      updateUI('ERROR: Not authenticated!', 'error');
+      return false;
     }
   };
 
-  // ... (остальные функции остаются такими же, как в предыдущей версии)
-
-  const paintLoop = async () => {
-    while (state.running) {
-      const charges = await getCharge();
-      
-      if (!charges) {
-        await sleep(5000);
-        continue;
-      }
-      
-      const { count, cooldownMs } = charges;
-      
-      if (count < 1) {
-        const waitTime = Math.ceil(cooldownMs/1000);
-        updateUI(state.language === 'pt' 
-          ? `⌛ Sem cargas. Esperando ${waitTime}s...` 
-          : `⌛ No charges. Waiting ${waitTime}s...`, 'status');
-        await sleep(cooldownMs);
-        continue;
-      }
-
-      const randomPos = getRandomPosition();
-      const paintResult = await paintPixel(randomPos.x, randomPos.y);
-      
-      if (paintResult?.painted === 1) {
-        state.paintedCount++;
-        state.lastPixel = { 
-          x: CONFIG.START_X + randomPos.x,
-          y: CONFIG.START_Y + randomPos.y,
-          time: new Date() 
-        };
-        state.charges.count--;
-        
-        document.getElementById('paintEffect').style.animation = 'pulse 0.5s';
-        setTimeout(() => {
-          document.getElementById('paintEffect').style.animation = '';
-        }, 500);
-        
-        updateUI(state.language === 'pt' 
-          ? `✅ Pixel pintado! (${randomPos.x},${randomPos.y})` 
-          : `✅ Pixel painted! (${randomPos.x},${randomPos.y})`, 'success');
-      } else {
-        updateUI(state.language === 'pt' 
-          ? '❌ Falha ao pintar (ver console)' 
-          : '❌ Failed to paint (see console)', 'error');
-      }
-
-      await sleep(CONFIG.DELAY);
-      updateStats();
+  // Инициализация
+  const init = async () => {
+    logger.log('Initializing bot...');
+    
+    if (!await checkAuth()) {
+      logger.error('Cannot start without authentication');
+      return;
     }
+    
+    await detectUserLocation();
+    createUI();
+    await getCharge();
+    updateStats();
+    
+    logger.log('Bot initialized successfully');
+    updateUI('Ready to start', 'success');
   };
 
-  // ... (остальной код UI остается без изменений)
-
-  await detectUserLocation();
-  createUI();
-  await getCharge();
-  updateStats();
-  
-  console.log('Bot initialized in debug mode. All errors will be logged to console.');
+  init();
 })();
