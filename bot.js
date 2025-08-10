@@ -95,8 +95,7 @@ return await fetchAPI(`https://backend.wplace.live/s0/pixel/${chunkX}/${chunkY}`
 };
 
 const getCharge = async () => {
-const data = await fetchAPI('
-', {
+const data = await fetchAPI('https://backend.wplace.live/s0/me', {
 method: 'GET',
 headers: { 'Accept': 'application/json' }
 });
@@ -118,8 +117,7 @@ return state.charges;
 
 const detectUserLocation = async () => {
 try {
-const response = await fetch('
-');
+const response = await fetch('https://ipapi.co/json/'');
 const data = await response.json();
 if (data.country === 'BR') {
 state.language = 'pt';
