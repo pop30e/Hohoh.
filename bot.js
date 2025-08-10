@@ -95,7 +95,7 @@ return await fetchAPI(`https://backend.wplace.live/s0/pixel/${chunkX}/${chunkY}`
 };
 
 const getCharge = async () => {
-const data = await fetchAPI('https://backend.wplace.live/s0/me', {
+const data = await fetchAPI('https://backend.wplace.live/s0/me'), {
 method: 'GET',
 headers: { 'Accept': 'application/json' }
 });
