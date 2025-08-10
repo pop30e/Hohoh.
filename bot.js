@@ -96,8 +96,9 @@ return await fetchAPI(`https://backend.wplace.live/s0/pixel/${chunkX}/${chunkY}`
 
 const getCharge = async () => {
 const data = await fetchAPI('https://backend.wplace.live/s0/me'), {
-method: 'GET',
-headers: { 'Accept': 'application/json' }
+method: 'POST',
+headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
+body: JSON.stringify({ coords: [x, y], colors: [randomColor] })
 });
 if (data && typeof data === 'object') {
 state.userInfo = data || state.userInfo;
