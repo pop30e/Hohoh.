@@ -14,8 +14,8 @@
 
     // Configuration
     const CONFIG = {
-        START_X: 742,
-        START_Y: 1148,
+        START_X: 1013,
+        START_Y: 2550,
         PIXELS_PER_LINE: 100,
         DELAY: 1000,
         MAX_RETRIES: 3,
